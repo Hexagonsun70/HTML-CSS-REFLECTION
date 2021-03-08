@@ -1,0 +1,57 @@
+h1 {
+  text-transform: uppercase;
+}
+
+/* Class Selectors */
+.caro-item {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+.banner {
+
+}
+
+.caro-link {
+  
+}
+
+/* ID Selectors */
+#caro1 {
+  background: url(img/web-design.jpg);
+}
+
+#caro2 {
+  background-image: url(img/it-support.jpg);
+}
+
+#caro3 {
+  background-image: url(img/telecoms-services.jpg);
+}
+
+#caro4 {
+  background-image: url(img/bespoke-software.jpg);
+}
+
+#caro5 {
+  background-image: url(img/digital-marketing.jpg);
+}
+
+#caro6 {
+  background-image: url(img/cyber-security.jpg);
+}
+
+/* Combinant Selectors */
+#caro1,
+#caro2,
+#caro3,
+#caro4,
+#caro5,
+#caro6 {
+  height: 1020px;
+  background-repeat: no-repeat;
+}
