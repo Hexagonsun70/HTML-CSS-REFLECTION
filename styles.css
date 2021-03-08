@@ -1,48 +1,202 @@
+@font-face {
+  font-family: poppins;
+  src: url(fonts/poppins-v15-latin-regular.woff2);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+/* Selectors */
+
 h1 {
   text-transform: uppercase;
+  font-size: 48px;
+  margin: 0px;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  background-color: #333645;
+  color: white;
+  padding: 15px;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
 }
 
 /* Class Selectors */
-.caro-item {
+
+.phone-box {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.phone-box img {
+  /* makes the image wrap to the box size set in .phone box */
+  width: 100%;
+  height: auto;
+
+}
+
+.burger-box {
+  background-color: grey;
+  display: grid;
+  color: white;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  align-items: center;
+  margin-right: 20px;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.search {
+  width: 100%;
+  height: 47px;
+  background-color: lightgrey;
+  border: solid 2px darkgrey;
+}
+
+  /* Carousel start */
+.carousel {
+  font-family: poppins;
   color: white;
   text-align: center;
   display: flex;
+  height: 1020px;
   justify-content: center;
   align-items: center;
-  padding-left: 0;
 }
 
-.banner {
+.text-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.caro-p {
+  padding-top: 5px;
+  margin-top: 5px;
+  font-size: 20px;
 }
 
 .caro-link {
-  
+  background-color: mediumpurple;
+  text-transform: uppercase;
+  margin: auto;
+  width: 225px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.arrow {
+  filter: invert(100%);
+}
+
+  /* /Carousel */
+
+  /* about section */
+
+.nm-info {
+  background-image: url(img/about.png);
+  background-color: #333645;
+  color: white;
+}
+
+.culture {
+  background-color: white;
+  color: #333645;
+  margin: auto;
+  width: 225px;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 /* ID Selectors */
+
+#header-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#logo {
+  margin-right: auto;
+}
+
+#burger {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  filter: invert(100%);
+  align-self: center;
+}
+
+/*
+  Carousel button palette:
+    #926fb1
+    #4183d7
+    #D64541
+    #67809F
+    #2ECC71
+    #F62459
+ */
+
+#caro-link1 {
+  background-color: #926fb1;
+}
+
+#caro-link2 {
+  background-color: #4183d7;
+}
+
+#caro-link3{
+  background-color: #D64541;
+}
+#caro-link4 {
+  background-color: #67809F;
+}
+
+#caro-link5 {
+  background-color: #2ECC71;
+}
+
+#caro-link6 {
+  background-color: #F62459;
+}
+
 #caro1 {
-  background: url(img/web-design.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/carousel/web-design.jpg);
+
 }
 
 #caro2 {
-  background-image: url(img/it-support.jpg);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/carousel/it-support.jpg);
 }
 
 #caro3 {
-  background-image: url(img/telecoms-services.jpg);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/carousel/telecoms-services.jpg);
 }
 
 #caro4 {
-  background-image: url(img/bespoke-software.jpg);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/carousel/bespoke-software.jpg);
 }
 
 #caro5 {
-  background-image: url(img/digital-marketing.jpg);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/carousel/digital-marketing.jpg);
 }
 
 #caro6 {
-  background-image: url(img/cyber-security.jpg);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/carousel/cyber-security.jpg);
 }
 
 /* Combinant Selectors */
@@ -54,4 +208,6 @@ h1 {
 #caro6 {
   height: 1020px;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
