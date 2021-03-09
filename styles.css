@@ -1,3 +1,54 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* /CSS reset */
+
 @font-face {
   font-family: poppins;
   src: url(fonts/poppins-v15-latin-regular.woff2);
@@ -5,7 +56,6 @@
 
 * {
   box-sizing: border-box;
-  font-family: poppins;
 }
 
 /* Selectors */
@@ -13,8 +63,7 @@
 h1 {
   text-transform: uppercase;
   font-size: 48px;
-  margin: 0px;
-  padding: 10px;
+  margin: 0px 0px 25px;
 }
 
 a {
@@ -23,6 +72,7 @@ a {
 }
 
 footer {
+  font-family: poppins;
   background-color: #333645;
   color: white;
   padding: 15px;
@@ -36,10 +86,11 @@ ul {
 /* Class Selectors */
 
 .phone-box {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 15px;
 }
 
 .phone-box img {
@@ -50,15 +101,15 @@ ul {
 }
 
 .burger-box {
-  background-color: grey;
-  display: grid;
+  background-color: black;
+  border-radius: 3px;
   color: white;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 1fr;
-  align-items: center;
-  margin-right: 20px;
-  max-width: 50px;
-  max-height: 50px;
+  display: grid;
+  justify-content: center;
+  /* margin-right: 20px; */
+  width: 50px;
+  height: 50px;
+  margin-top: 6px;
 }
 
 .search {
@@ -66,6 +117,8 @@ ul {
   height: 47px;
   background-color: lightgrey;
   border: solid 2px darkgrey;
+  margin-left: 5px;
+  margin-right: 10px;
 }
 
   /* Carousel start */
@@ -77,6 +130,7 @@ ul {
   height: 1020px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .text-button {
@@ -86,9 +140,10 @@ ul {
 }
 
 .caro-p {
-  padding-top: 5px;
-  margin-top: 5px;
+  margin: 0px 0px 35px;
   font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.4px;
 }
 
 .caro-link {
@@ -105,6 +160,140 @@ ul {
 }
 
   /* /Carousel */
+
+  /* Info Boxes */
+
+.info-boxes {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.info-anchor {
+  box-sizing: border-box;
+  flex: 1;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-box {
+  font-family: poppins;
+  color: black;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 0;
+  padding: 50px;
+  border: 1px solid grey;
+  max-width: 550px;
+  border-radius: 3px;
+}
+
+.info-icon {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%
+  flex: 1;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+h2 {
+  flex: 1;
+  flex-basis: 100%;
+  text-align: center;
+  padding-bottom: 15px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 19.8px;
+}
+
+.line {
+  flex: 0;
+  flex-basis: 5%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.text-span {
+  text-align: center;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  margin-bottom: 20px;
+  flex-basis: 100%;
+}
+
+.read-more {
+  flex: 0.2;
+  flex-basis: 10%;
+  height: 45px;
+  border-radius: 4px;
+  background-color: #926fb1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  line-height: 35px;
+  letter-spacing: 0.4;
+  text-transform: uppercase;
+  color: white;
+}
+
+
+
+/*
+  Carousel/Info-box button palette:
+    #926fb1 Web Design (developer Training)
+    #4183d7 IT support
+    #D64541 Telecoms Services
+    #67809F Bespoke
+    #2ECC71 Digital Marketing
+    #F62459 Cyber Security
+ */
+
+#info-icon1, #read-more1 {
+  background-color: #67809F;
+}
+
+#info-icon2, #read-more2{
+  background-color: #4183d7;
+}
+
+#info-icon3, #read-more3 {
+  background-color: #2ECC71;
+}
+
+#info-icon4, #read-more4 {
+  background-color: #D64541;
+}
+
+#info-icon5, #read-more5 {
+  background-color: #926fb1;
+}
+
+#info-icon6, #read-more6 {
+  background-color: #F62459;
+}
+
+#info-icon7, #read-more7 {
+  background-color: #926fb1;
+}
+
+.info-anchor:hover{
+  #info-icon1. #readmore1 {
+
+  }
+}
 
   /* about section */
 
@@ -127,28 +316,32 @@ ul {
 
 #header-flex {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
+
 #logo {
   margin-right: auto;
+  /* width: 100%;
+  height: auto; */
 }
 
 #burger {
   grid-row-start: 1;
   grid-row-end: 1;
   filter: invert(100%);
-  align-self: center;
+  width: 50px;
 }
 
+
+
 /*
-  Carousel button palette:
-    #926fb1
-    #4183d7
-    #D64541
-    #67809F
-    #2ECC71
-    #F62459
+  Carousel/Info-box button palette:
+    #926fb1 Web Design (developer Training)
+    #4183d7 IT support
+    #D64541 Telecoms Services
+    #67809F Bespoke
+    #2ECC71 Digital Marketing
+    #F62459 Cyber Security
  */
 
 #caro-link1 {
@@ -168,6 +361,7 @@ ul {
 
 #caro-link5 {
   background-color: #2ECC71;
+  width: 350px;
 }
 
 #caro-link6 {
@@ -210,4 +404,31 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  font-size: 20px;
 }
+
+/*
+input[type=checkbox]:checked + .label:before {
+    content: "\2713";
+}
+
+input[type=checkbox]:checked {
+    display: none;
+}
+
+-moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none;
+
+     */
+ /* ul, li {
+         margin: 0;
+         padding: 0;
+         border: 0;
+         outline: 0;
+         font-weight: inherit;
+         font-size: 100%;
+         font-family: inherit;
+         vertical-align: baseline;
+     } */
+/* css reset - user agent style stylesheet */
