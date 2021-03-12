@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,87 +15,66 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: "";
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* /CSS reset */
-
-@font-face {
-  font-family: poppins;
-  src: url(fonts/poppins-v15-latin-regular.woff2);
-}
-
-@font-face {
-	font-family: poppins-bold;
-	src: url(fonts/poppins-v15-latin-600.woff2);
-}
-
 * {
   box-sizing: border-box;
 }
 
-/* Selectors */
-
-h1 {
-  text-transform: uppercase;
-  font-size: 48px;
-  margin: 0px 0px 25px;
-}
-
-h4 {
-	margin-bottom: 25px;
-}
-
 a {
   text-decoration: none;
-  color: white;
 }
 
-footer {
+hr {
+  margin: 0;
+}
+
+@font-face {
   font-family: poppins;
-	letter-spacing: 0.4;
-  background-color: #333645;
-  color: white;
-  padding: 50px 0;
+  src: url(../fonts/poppins-v15-latin-regular.woff2);
 }
-
-ul {
-  padding: 0;
-  list-style-type: none;
+@font-face {
+  font-family: poppins-bold;
+  src: url(../fonts/poppins-v15-latin-600.woff2);
 }
-
-/* Class Selectors */
-
 .logo {
-	margin: 10px auto 10px 10px;
+  margin: 10px auto 10px 10px;
 }
 
 .phone-box {
@@ -111,7 +89,6 @@ ul {
   /* makes the image wrap to the box size set in .phone box */
   width: 100%;
   height: auto;
-
 }
 
 .burger-box {
@@ -126,6 +103,13 @@ ul {
   margin-top: 19px;
 }
 
+.burger {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  filter: invert(100%);
+  width: 50px;
+}
+
 .search {
   width: 99%;
   height: 47px;
@@ -134,7 +118,11 @@ ul {
   margin-left: 5px;
 }
 
-  /* Carousel start */
+.header-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
 .carousel {
   font-family: poppins;
   color: white;
@@ -144,6 +132,12 @@ ul {
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+}
+
+.caro-title {
+  text-transform: uppercase;
+  font-size: 48px;
+  margin: 0px 0px 25px;
 }
 
 .text-button {
@@ -162,6 +156,7 @@ ul {
 .caro-link {
   background-color: mediumpurple;
   text-transform: uppercase;
+  color: white;
   margin: auto;
   width: 225px;
   padding: 20px;
@@ -169,17 +164,85 @@ ul {
 }
 
 .fa-arrow-right {
-	margin-right: -10px;
-	margin-left: 8px;
-	font-size: 1.2rem;
+  margin-right: -10px;
+  margin-left: 8px;
+  font-size: 1.2rem;
 }
 
-  /* /Carousel */
+/*
+  Carousel/Info-box button palette:
+    #926fb1 Web Design (developer Training)
+    #4183d7 IT support
+    #D64541 Telecoms Services
+    #67809F Bespoke
+    #2ECC71 Digital Marketing
+    #F62459 Cyber Security
+ */
+#caro-link1 {
+  background-color: #926fb1;
+}
 
-  /* Info Boxes */
+#caro-link2 {
+  background-color: #4183d7;
+}
+
+#caro-link3 {
+  background-color: #D64541;
+}
+
+#caro-link4 {
+  background-color: #67809F;
+}
+
+#caro-link5 {
+  background-color: #2ECC71;
+  width: 350px;
+}
+
+#caro-link6 {
+  background-color: #F62459;
+}
+
+#caro1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel/web-design.jpg);
+}
+
+#caro2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel/it-support.jpg);
+}
+
+#caro3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel/telecoms-services.jpg);
+}
+
+#caro4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel/bespoke-software.jpg);
+}
+
+#caro5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel/digital-marketing.jpg);
+}
+
+#caro6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel/cyber-security.jpg);
+}
+
+/* Combinant Selectors */
+#caro1,
+#caro2,
+#caro3,
+#caro4,
+#caro5,
+#caro6 {
+  height: 1020px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 20px;
+}
 
 .anchor-wrapper {
-	  margin: 30px 0 0;
+  margin: 30px 0 0;
 }
 
 .info-boxes {
@@ -188,7 +251,7 @@ ul {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-	margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .info-anchor {
@@ -197,9 +260,9 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-	width: inherit;
-	padding-left: 15px;
-	padding-right: 15px;
+  width: inherit;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .info-box {
@@ -212,7 +275,7 @@ ul {
   align-items: center;
   padding: 35px;
   border: 1px solid grey;
-	width: auto;
+  width: auto;
   max-width: 720px;
   border-radius: 3px;
 }
@@ -221,13 +284,11 @@ ul {
   background-color: white;
   width: 60px;
   height: 60px;
-  border-radius: 50%
-  flex: 1;
   border-radius: 50%;
   margin-bottom: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
@@ -241,13 +302,13 @@ h2 {
 }
 
 .break {
-	width: 50px;
-	fill: black;
-	height: 1px;
+  width: 50px;
+  fill: black;
+  height: 1px;
 }
 
 .line {
-	margin: 0px;
+  margin: 0px;
 }
 
 .text-span {
@@ -260,9 +321,9 @@ h2 {
 }
 
 .rule {
-	background-color: black;
-	width: 28px;
-	height: 3px;
+  background-color: black;
+  width: 28px;
+  height: 3px;
 }
 
 .read-more {
@@ -282,43 +343,27 @@ h2 {
 }
 
 .read-text {
-	white-space: nowrap;
-	padding: 15px;
+  white-space: nowrap;
+  padding: 15px;
 }
 
-.fa-chart-bar {
-	color: white;
-	font-size: 1.4rem;
+.fa-chart-bar,
+.fa-desktop,
+.fa-code,
+.fa-graduation-cap {
+  color: white;
+  font-size: 1.4rem;
 }
 
-.fa-phone {
-	color: white;
-	font-size: 1.3rem;
-}
-
-.fa-desktop {
-	color: white;
-	font-size: 1.4rem;
-}
-
+.fa-phone,
 .fa-shield-alt {
-	color: white;
-	font-size: 1.3rem;
+  color: white;
+  font-size: 1.3rem;
 }
 
 .fa-th {
-	color: white;
-	font-size: 1.2rem;
-}
-
-.fa-code {
-	color: white;
-	font-size: 1.4rem;
-}
-
-.fa-graduation-cap {
-	color: white;
-	font-size: 1.4rem;
+  color: white;
+  font-size: 1.2rem;
 }
 
 /*
@@ -330,12 +375,11 @@ h2 {
     #2ECC71 Digital Marketing
     #F62459 Cyber Security
  */
-
 #info-icon1, #read-more1 {
   background-color: #67809F;
 }
 
-#info-icon2, #read-more2{
+#info-icon2, #read-more2 {
   background-color: #4183d7;
 }
 
@@ -359,165 +403,157 @@ h2 {
   background-color: #926fb1;
 }
 
-  /* about section */
-
 .nm-info {
-	font-family: poppins;
+  font-family: poppins;
   /* background-image: url(img/about.png); */
   background-color: #333645;
   color: white;
-	padding: 50px 15px;
+  padding: 50px 15px;
 }
 
 .nm-info h1 {
-	font-size: 36px;
-	line-height: 40px;
-	letter-spacing: 0.4px;
-	margin-top: -10px;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.4px;
+  margin-top: -6px;
+  margin-bottom: 28px;
 }
 
 .nm-info p {
-	margin-bottom: 25px;
-	font-size: 16px;
-	line-height: 30px;
-	letter-spacing: 0.4px;
-
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.4px;
 }
 
 strong {
-	font-family: poppins-bold;
+  font-family: poppins-bold;
 }
 
 .culture {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
   color: #333645;
-	text-transform: uppercase;
-	font-size: 17px;
-	line-height: 35px;
-	letter-spacing: 0.4px;
-	width: 180px;
-	height: 50px;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 35px;
+  letter-spacing: 0.4px;
+  width: 180px;
+  height: 50px;
   margin: 5px;
-	padding: 5px 15px;
+  padding: 5px 15px;
   border-radius: 5px;
 }
 
 /* News Section divider */
-
-
 .span-n-line {
-	font-family: poppins-bold;
-	text-transform: uppercase;
-	font-size: 1.25rem;
-	letter-spacing: 0.4;
-	padding: 40px 15px;
+  font-family: poppins-bold;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 0.4;
+  padding: 40px 15px;
 }
 
 .span {
-	margin-bottom: 1000px;
+  margin-bottom: 1000px;
 }
 
 .line {
-	border: solid 2px;
-	background-color: black;
-	width: 65px;
-	margin-left: 15px;
-	margin-bottom: 0px;
-	padding: 0;
+  border: solid 2px;
+  background-color: black;
+  width: 65px;
+  margin-left: 15px;
+  margin-bottom: 0px;
+  padding: 0;
 }
 
 /* News blocks */
-
-
 .news {
-	padding: 50px 0px;
-	background-color: #f3f3f3;
+  padding: 30px 0px;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .card-container {
-	display: flex;
-}
-
-.news-block {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: poppins;
-	letter-spacing: 0.4px;
-	width: 100%;
-
+  max-width: 860px;
+  font-family: poppins;
+  letter-spacing: 0.4px;
+  width: 100%;
 }
 
 .news-blocks {
-	background-color: white;
+  background-color: white;
   margin-bottom: 50px;
-	width: 100%;
-
+  width: 100%;
+  padding: 0 15px;
 }
-
-/* .background-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height:
-} */
 
 .news-image {
-	height: auto;
-	max-width: 100%;
-	display: block;
-	border: red solid 5px;
+  height: auto;
+  max-width: 100%;
+  display: block;
 }
-
-.background1 {
-	/* width: 100%;
-	height: auto; */
-	/* background-position: center;
-	background-repeat: no-repeat;
-	background-image: cover; */
-}
-
-.background2 {
-	background-image: url(img/news/news-carbon.jpg);
-	height: 200px;
-	width: 100%;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
-.background3 {
-	background-image: url(img/news/news-how.jpg);
-	height: 200px;
-	width: 100%;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
 
 .info-date {
-	border-left: solid 1px grey;
-	border-bottom: solid 1px grey;
-	border-right: solid 1px grey;
-	padding: 25px;
+  border-left: solid 1px grey;
+  border-bottom: solid 1px grey;
+  border-right: solid 1px grey;
+  padding: 30px;
 }
 
+.news-title {
+  font-family: poppins-bold;
+  color: #4183d7;
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
 
+.news-p {
+  font-size: 13px;
+  margin-bottom: 25px;
+}
 
-/* ID Selectors */
+.read1 {
+  width: 150px;
+  align-self: border-left;
+  margin-bottom: 30px;
+}
 
-#header-flex {
+.news-footer {
   display: flex;
-  justify-content: space-around;
+  border-top: 1px solid black;
+  padding-top: 30px;
 }
 
-#burger {
-  grid-row-start: 1;
-  grid-row-end: 1;
-  filter: invert(100%);
-  width: 50px;
+.mini-logo {
+  object-fit: contain;
+}
+
+.news-foot-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-left: 25px;
+}
+
+.posted {
+  flex-grow: 1;
+  font-family: poppins-bold;
+}
+
+.break {
+  flex-basis: 100%;
+}
+
+.date {
+  flex-grow: 1;
 }
 
 /*
@@ -529,92 +565,109 @@ strong {
     #2ECC71 Digital Marketing
     #F62459 Cyber Security
  */
-
-#caro-link1 {
-  background-color: #926fb1;
+.sign-up {
+  display: flex;
+  font-family: poppins;
+  color: #333645;
+  padding: 50px 30px;
+  background-color: #DDD;
+  letter-spacing: 0.4;
+  font-size: 16px;
 }
 
-#caro-link2 {
-  background-color: #4183d7;
+.input-header {
+  line-height: 35.2px;
+  font-size: 32px;
+  margin-bottom: 15px;
 }
 
-#caro-link3{
-  background-color: #D64541;
-}
-#caro-link4 {
-  background-color: #67809F;
-}
-
-#caro-link5 {
-  background-color: #2ECC71;
-  width: 350px;
+.input-header,
+.input-name,
+.input-email {
+  margin-bottom: 15px;
 }
 
-#caro-link6 {
-  background-color: #F62459;
+.input-name {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
 }
 
-#caro1 {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/carousel/web-design.jpg);
-
+.input-email {
+  font-weight: bold;
 }
 
-#caro2 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/carousel/it-support.jpg);
+input-label {
+  margin-bottom: 5px;
 }
 
-#caro3 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/carousel/telecoms-services.jpg);
+.input-label::after {
+  content: "*";
+  color: red;
 }
 
-#caro4 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/carousel/bespoke-software.jpg);
+.input-field {
+  width: 100%;
+  height: 45px;
+  border: #777;
 }
 
-#caro5 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/carousel/digital-marketing.jpg);
+.form-elements {
+  display: flex;
+  justify-content: border-left;
+  font-weight: bold;
+  line-height: 32px;
 }
 
-#caro6 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/carousel/cyber-security.jpg);
+.label {
+  font-weight: bold;
+  letter-spacing: 5;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
-/* Combinant Selectors */
-#caro1,
-#caro2,
-#caro3,
-#caro4,
-#caro5,
-#caro6 {
-  height: 1020px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  font-size: 20px;
-} */
-
-/*
-input[type=checkbox]:checked + .label:before {
-    content: "\2713";
+.btn {
+  background-color: #333645;
+  border: none;
+  color: white;
+  padding: 5px 15px;
 }
 
-input[type=checkbox]:checked {
-    display: none;
+.btn:hover {
+  background-color: #22242E;
 }
 
--moz-appearance:none;
-    -webkit-appearance:none;
-    -o-appearance:none;
+footer {
+  font-family: poppins;
+  letter-spacing: 0.4;
+  line-height: 22px;
+  background-color: #333645;
+  color: white;
+  padding: 50px 0;
+}
 
-     */
- /* ul, li {
-         margin: 0;
-         padding: 0;
-         border: 0;
-         outline: 0;
-         font-weight: inherit;
-         font-size: 100%;
-         font-family: inherit;
-         vertical-align: baseline;
-     } */
-/* css reset - user agent style stylesheet
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.contact,
+address,
+.contact-links,
+.list-title,
+ul,
+.website,
+.map-n-copy,
+.social-title {
+  margin-bottom: 26px;
+  padding: 0 15px;
+}
+
+footer a {
+  color: white;
+}
+
+.f-link:hover {
+  text-decoration: underline;
+}

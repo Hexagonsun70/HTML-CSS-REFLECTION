@@ -1,0 +1,121 @@
+/* News Section divider */
+
+.span-n-line {
+	font-family: poppins-bold;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	letter-spacing: 0.4;
+	padding: 40px 15px;
+}
+
+.span {
+	margin-bottom: 1000px;
+}
+
+.line {
+	border: solid 2px;
+	background-color: black;
+	width: 65px;
+	margin-left: 15px;
+	margin-bottom: 0px;
+	padding: 0;
+}
+
+/* News blocks */
+
+.news {
+	padding: 30px 0px;
+	background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  max-width: 860px;
+	font-family: poppins;
+	letter-spacing: 0.4px;
+	width: 100%;
+}
+
+.news-blocks {
+	background-color: white;
+  margin-bottom: 50px;
+	width: 100%;
+	padding: 0 15px;
+}
+
+.news-image {
+	height: auto;
+	max-width: 100%;
+	display: block;
+}
+
+.info-date {
+	border-left: solid 1px grey;
+	border-bottom: solid 1px grey;
+	border-right: solid 1px grey;
+	padding: 30px;
+}
+
+.news-title {
+	font-family: poppins-bold;
+	color: #4183d7;
+	font-size: 16px;
+	margin-bottom: 15px;
+	text-transform: capitalize;
+}
+
+.news-p {
+	font-size: 13px;
+	margin-bottom: 25px;
+}
+
+.read1 {
+	width: 150px;
+	align-self: border-left;
+	margin-bottom: 30px;
+}
+
+.news-footer {
+	display: flex;
+	border-top: 1px solid black;
+	padding-top: 30px;
+}
+
+.mini-logo {
+	object-fit: contain;
+}
+
+.news-foot-txt {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	margin-left: 25px;
+}
+
+.posted {
+	flex-grow: 1;
+	font-family: poppins-bold;
+
+}
+
+.break {
+	flex-basis: 100%;
+}
+
+.date {
+	flex-grow: 1;
+}
+
+/*
+  Carousel/Info-box button palette:
+    #926fb1 Web Design (developer Training)
+    #4183d7 IT support
+    #D64541 Telecoms Services
+    #67809F Bespoke
+    #2ECC71 Digital Marketing
+    #F62459 Cyber Security
+ */

@@ -1,0 +1,50 @@
+.logo {
+	margin: 10px auto 10px 10px;
+}
+
+.phone-box {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+
+.phone-box img {
+  /* makes the image wrap to the box size set in .phone box */
+  width: 100%;
+  height: auto;
+
+}
+
+.burger-box {
+  background-color: black;
+  border-radius: 3px;
+  color: white;
+  display: grid;
+  justify-content: center;
+  margin-right: 25px;
+  width: 50px;
+  height: 50px;
+  margin-top: 19px;
+}
+
+.burger {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  filter: invert(100%);
+  width: 50px;
+}
+
+.search {
+  width: 99%;
+  height: 47px;
+  background-color: lightgrey;
+  border: solid 2px darkgrey;
+  margin-left: 5px;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-around;
+}

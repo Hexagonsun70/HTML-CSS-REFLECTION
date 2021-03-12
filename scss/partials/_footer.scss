@@ -1,0 +1,38 @@
+footer {
+  font-family: poppins;
+	letter-spacing: 0.4;
+  line-height: 22px;
+  background-color: #333645;
+  color: white;
+  padding: 50px 0;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.contact,
+address,
+.contact-links,
+.list-title,
+ul,
+.website,
+.map-n-copy,
+.social-title,
+{
+  margin-bottom: 26px;
+  padding: 0 15px;
+}
+
+footer a {
+  color: white;
+}
+.f-link:hover {
+  text-decoration: underline;
+}
+
+.social-container {
+  
+}

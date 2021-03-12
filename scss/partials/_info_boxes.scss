@@ -1,0 +1,162 @@
+.anchor-wrapper {
+	  margin: 30px 0 0;
+}
+
+.info-boxes {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+	margin-bottom: 50px;
+}
+
+.info-anchor {
+  flex: 1;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	width: inherit;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.info-box {
+  font-family: poppins;
+  color: black;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  border: 1px solid grey;
+	width: auto;
+  max-width: 720px;
+  border-radius: 3px;
+}
+
+.info-icon {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h2 {
+  flex: 1;
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 19.8px;
+}
+
+.break {
+	width: 50px;
+	fill: black;
+	height: 1px;
+}
+
+.line {
+	margin: 0px;
+}
+
+.text-span {
+  text-align: center;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  margin-bottom: 20px;
+  flex-basis: 100%;
+}
+
+.rule {
+	background-color: black;
+	width: 28px;
+	height: 3px;
+}
+
+.read-more {
+  flex: 0.2;
+  flex-basis: 10%;
+  height: 45px;
+  border-radius: 4px;
+  background-color: #926fb1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  line-height: 35px;
+  letter-spacing: 0.4;
+  text-transform: uppercase;
+  color: white;
+}
+
+.read-text {
+	white-space: nowrap;
+	padding: 15px;
+}
+
+.fa-chart-bar,
+.fa-desktop,
+.fa-code,
+.fa-graduation-cap {
+	color: white;
+	font-size: 1.4rem;
+}
+
+.fa-phone,
+.fa-shield-alt {
+	color: white;
+	font-size: 1.3rem;
+}
+
+.fa-th {
+	color: white;
+	font-size: 1.2rem;
+}
+
+/*
+  Carousel/Info-box button palette:
+    #926fb1 Web Design (developer Training)
+    #4183d7 IT support
+    #D64541 Telecoms Services
+    #67809F Bespoke
+    #2ECC71 Digital Marketing
+    #F62459 Cyber Security
+ */
+
+#info-icon1, #read-more1 {
+  background-color: #67809F;
+}
+
+#info-icon2, #read-more2{
+  background-color: #4183d7;
+}
+
+#info-icon3, #read-more3 {
+  background-color: #2ECC71;
+}
+
+#info-icon4, #read-more4 {
+  background-color: #D64541;
+}
+
+#info-icon5, #read-more5 {
+  background-color: #926fb1;
+}
+
+#info-icon6, #read-more6 {
+  background-color: #F62459;
+}
+
+#info-icon7, #read-more7 {
+  background-color: #926fb1;
+}

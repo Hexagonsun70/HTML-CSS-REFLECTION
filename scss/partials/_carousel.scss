@@ -1,0 +1,118 @@
+.carousel {
+font-family: poppins;
+color: white;
+text-align: center;
+display: flex;
+height: 1020px;
+justify-content: center;
+align-items: center;
+margin-bottom: 40px;
+}
+
+.caro-title {
+  text-transform: uppercase;
+  font-size: 48px;
+  margin: 0px 0px 25px;
+}
+
+.text-button {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.caro-p {
+margin: 0px 0px 35px;
+font-size: 20px;
+line-height: 36px;
+letter-spacing: 0.4px;
+}
+
+.caro-link {
+background-color: mediumpurple;
+text-transform: uppercase;
+color: white;
+margin: auto;
+width: 225px;
+padding: 20px;
+border-radius: 5px;
+}
+
+.fa-arrow-right {
+margin-right: -10px;
+margin-left: 8px;
+font-size: 1.2rem;
+}
+
+/*
+  Carousel/Info-box button palette:
+    #926fb1 Web Design (developer Training)
+    #4183d7 IT support
+    #D64541 Telecoms Services
+    #67809F Bespoke
+    #2ECC71 Digital Marketing
+    #F62459 Cyber Security
+ */
+
+#caro-link1 {
+  background-color: #926fb1;
+}
+
+#caro-link2 {
+  background-color: #4183d7;
+}
+
+#caro-link3{
+  background-color: #D64541;
+}
+#caro-link4 {
+  background-color: #67809F;
+}
+
+#caro-link5 {
+  background-color: #2ECC71;
+  width: 350px;
+}
+
+#caro-link6 {
+  background-color: #F62459;
+}
+
+#caro1 {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/carousel/web-design.jpg);
+
+}
+
+#caro2 {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/carousel/it-support.jpg);
+}
+
+#caro3 {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/carousel/telecoms-services.jpg);
+}
+
+#caro4 {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/carousel/bespoke-software.jpg);
+}
+
+#caro5 {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/carousel/digital-marketing.jpg);
+}
+
+#caro6 {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/carousel/cyber-security.jpg);
+}
+
+/* Combinant Selectors */
+#caro1,
+#caro2,
+#caro3,
+#caro4,
+#caro5,
+#caro6 {
+  height: 1020px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 20px;
+}
