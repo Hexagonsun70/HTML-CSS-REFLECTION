@@ -128,7 +128,6 @@ hr {
   color: white;
   text-align: center;
   display: flex;
-  height: 1020px;
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
@@ -294,8 +293,8 @@ hr {
 h2 {
   flex: 1;
   flex-basis: 100%;
-  text-align: center;
   margin-bottom: 15px;
+  text-align: center;
   font-style: normal;
   font-size: 18px;
   line-height: 19.8px;
@@ -324,6 +323,7 @@ h2 {
   background-color: black;
   width: 28px;
   height: 3px;
+  margin-bottom: 10px;
 }
 
 .read-more {
@@ -331,7 +331,6 @@ h2 {
   flex-basis: 10%;
   height: 45px;
   border-radius: 4px;
-  background-color: #926fb1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -366,15 +365,6 @@ h2 {
   font-size: 1.2rem;
 }
 
-/*
-  Carousel/Info-box button palette:
-    #926fb1 Web Design (developer Training)
-    #4183d7 IT support
-    #D64541 Telecoms Services
-    #67809F Bespoke
-    #2ECC71 Digital Marketing
-    #F62459 Cyber Security
- */
 #info-icon1, #read-more1 {
   background-color: #67809F;
 }
@@ -384,7 +374,7 @@ h2 {
 }
 
 #info-icon3, #read-more3 {
-  background-color: #2ECC71;
+  background-color: #2ecc71;
 }
 
 #info-icon4, #read-more4 {
@@ -401,6 +391,97 @@ h2 {
 
 #info-icon7, #read-more7 {
   background-color: #926fb1;
+}
+
+#bespoke-anchor:hover .info-box {
+  background-color: #67809F;
+  color: white;
+}
+#bespoke-anchor:hover .rule {
+  background-color: white;
+}
+#bespoke-anchor:hover #info-icon1, #bespoke-anchor:hover #read-more1 {
+  background-color: white;
+  color: #67809F;
+}
+#bespoke-anchor:hover .fa-th {
+  color: #67809F;
+}
+
+#it-anchor:hover .info-box {
+  background-color: #4183d7;
+  color: white;
+}
+#it-anchor:hover .rule {
+  background-color: white;
+}
+#it-anchor:hover #info-icon2, #it-anchor:hover #read-more2 {
+  background-color: white;
+  color: #4183d7;
+}
+#it-anchor:hover .fa-desktop {
+  color: #4183d7;
+}
+
+#marketing-anchor:hover .info-box {
+  background-color: #2ecc71;
+  color: white;
+}
+#marketing-anchor:hover .rule {
+  background-color: white;
+}
+#marketing-anchor:hover #info-icon3, #marketing-anchor:hover #read-more3 {
+  background-color: white;
+  color: #2ecc71;
+}
+#marketing-anchor:hover .fa-chart-bar {
+  color: #2ecc71;
+}
+
+#tele-anchor:hover .info-box {
+  background-color: #D64541;
+  color: white;
+}
+#tele-anchor:hover .rule {
+  background-color: white;
+}
+#tele-anchor:hover #info-icon4, #tele-anchor:hover #read-more4 {
+  background-color: white;
+  color: #D64541;
+}
+#tele-anchor:hover .fa-phone {
+  color: #D64541;
+}
+
+#cyber-anchor:hover .info-box {
+  background-color: #F62459;
+  color: white;
+}
+#cyber-anchor:hover .rule {
+  background-color: white;
+}
+#cyber-anchor:hover #info-icon6, #cyber-anchor:hover #read-more6 {
+  background-color: white;
+  color: #F62459;
+}
+#cyber-anchor:hover .fa-shield-alt {
+  color: #F62459;
+}
+
+.purple-anchor:hover .info-box {
+  background-color: #926fb1;
+  color: white;
+}
+.purple-anchor:hover .rule {
+  background-color: white;
+}
+.purple-anchor:hover #info-icon5, .purple-anchor:hover #info-icon7,
+.purple-anchor:hover #read-more5, .purple-anchor:hover #read-more7 {
+  background-color: white;
+  color: #926fb1;
+}
+.purple-anchor:hover .fa-code, .purple-anchor:hover .fa-graduation-cap {
+  color: #926fb1;
 }
 
 .nm-info {
@@ -484,19 +565,40 @@ strong {
   font-family: poppins;
   letter-spacing: 0.4px;
   width: 100%;
+  padding: 0px 15px;
 }
 
 .news-blocks {
   background-color: white;
   margin-bottom: 50px;
   width: 100%;
-  padding: 0 15px;
 }
 
 .news-image {
   height: auto;
   max-width: 100%;
   display: block;
+}
+
+.background1 {
+  position: relative;
+}
+
+.news-tag {
+  width: auto;
+  height: auto;
+  background-color: #4183d7;
+  float: right;
+  position: absolute;
+  right: 0px;
+  top: 15px;
+  padding: 5px;
+  color: white;
+  font-family: poppins-bold;
+  text-transform: uppercase;
+}
+.news-tag:hover {
+  text-decoration: underline;
 }
 
 .info-date {
@@ -508,10 +610,24 @@ strong {
 
 .news-title {
   font-family: poppins-bold;
-  color: #4183d7;
   font-size: 16px;
   margin-bottom: 15px;
   text-transform: capitalize;
+}
+.news-title:hover {
+  text-decoration: underline;
+}
+
+#news-link-style-1 {
+  color: #926fb1;
+}
+
+#news-link-style-2 {
+  color: #2ecc71;
+}
+
+#news-link-style-3 {
+  color: #4183d7;
 }
 
 .news-p {
@@ -519,7 +635,9 @@ strong {
   margin-bottom: 25px;
 }
 
-.read1 {
+.read1,
+.read2,
+.read3 {
   width: 150px;
   align-self: border-left;
   margin-bottom: 30px;
@@ -556,6 +674,18 @@ strong {
   flex-grow: 1;
 }
 
+.read1, #tag1 {
+  background-color: #926fb1;
+}
+
+.read2, #tag2 {
+  background-color: #2ecc71;
+}
+
+.read3, #tag3 {
+  background-color: #4183d7;
+}
+
 /*
   Carousel/Info-box button palette:
     #926fb1 Web Design (developer Training)
@@ -578,10 +708,13 @@ strong {
 .input-header {
   line-height: 35.2px;
   font-size: 32px;
-  margin-bottom: 15px;
 }
 
-.input-header,
+.input-head {
+  margin-left: 15px;
+}
+
+.input-head,
 .input-name,
 .input-email {
   margin-bottom: 15px;
@@ -594,11 +727,13 @@ strong {
 }
 
 .input-email {
+  display: flex;
+  flex-wrap: wrap;
   font-weight: bold;
 }
 
-input-label {
-  margin-bottom: 5px;
+.input-label {
+  margin: 0 15px 5px 15px;
 }
 
 .input-label::after {
@@ -610,6 +745,11 @@ input-label {
   width: 100%;
   height: 45px;
   border: #777;
+  margin: 0 15px;
+}
+
+.form-group {
+  margin: 0 15px;
 }
 
 .form-elements {
@@ -617,6 +757,11 @@ input-label {
   justify-content: border-left;
   font-weight: bold;
   line-height: 32px;
+}
+
+#privacy-link {
+  color: #333645;
+  text-decoration: underline;
 }
 
 .label {
@@ -640,6 +785,7 @@ input-label {
 footer {
   font-family: poppins;
   letter-spacing: 0.4;
+  font-size: 13px;
   line-height: 22px;
   background-color: #333645;
   color: white;
@@ -650,6 +796,7 @@ ul {
   padding: 0;
   list-style-type: none;
   margin-bottom: 30px;
+  font-size: 13px;
 }
 
 .contact,
@@ -664,10 +811,97 @@ ul,
   padding: 0 15px;
 }
 
+.footer-title {
+  font-size: 16px;
+}
+
 footer a {
   color: white;
 }
-
-.f-link:hover {
+footer a:hover {
   text-decoration: underline;
+}
+
+.social-links {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.social-boxes {
+  font-size: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-boxes a {
+  width: 45%;
+  margin: 0 8px;
+}
+
+.social-container {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  float: left;
+  background-color: #262834;
+}
+
+.soc-con-3 {
+  margin-top: 30px;
+}
+
+.soc-con-1:hover {
+  background-color: #3b5988;
+}
+
+.soc-con-2:hover {
+  background-color: #00aced;
+}
+
+.soc-con-3:hover {
+  background-color: #0077b5;
+}
+
+.soc-con-4 {
+  background-color: #333645;
+}
+
+.client-bar {
+  padding: 50px 0;
+  box-shadow: top;
+}
+
+.client-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.arrow_box {
+  display: none;
+}
+
+.client-img {
+  height: auto;
+  width: auto;
+}
+
+.bw-img {
+  display: inline-block;
+}
+
+.colour-img {
+  display: none;
+}
+
+.client-img:hover .bw-img {
+  display: none;
+}
+.client-img:hover .colour-img {
+  display: inline-block;
 }

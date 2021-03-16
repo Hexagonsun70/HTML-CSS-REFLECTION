@@ -11,13 +11,13 @@
 .input-header {
   line-height: 35.2px;
   font-size: 32px;
-  margin-bottom: 15px;
 }
 
 .input-head {
+  margin-left: 15px;
 }
 
-.input-header,
+.input-head,
 .input-name,
 .input-email {
   margin-bottom: 15px;
@@ -30,11 +30,13 @@
 }
 
 .input-email {
+  display: flex;
+  flex-wrap: wrap;
   font-weight: bold;
 }
 
-input-label {
-  margin-bottom: 5px;
+.input-label {
+  margin: 0 15px 5px 15px;
 }
 
 .input-label::after {
@@ -46,6 +48,11 @@ input-label {
   width: 100%;
   height: 45px;
   border: #777;
+  margin: 0 15px;
+}
+
+.form-group {
+  margin: 0 15px;
 }
 
 .form-elements {
@@ -53,6 +60,11 @@ input-label {
   justify-content: border-left;
   font-weight: bold;
   line-height: 32px;
+}
+
+#privacy-link {
+  color: #333645;
+  text-decoration: underline;
 }
 
 .label {
@@ -72,26 +84,3 @@ input-label {
 .btn:hover {
   background-color: #22242E;
 }
-
-// [type="checkbox"] {
-//   opacity: 1;
-// }
-//
-// [type="checkbox"] + label {
-//   position: relative;
-//   padding-left: 10px;
-//   cursor: pointer;
-//   display: inline-block;
-//
-// }
-//
-// [type="checkbox"] + label::before {
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   top: 0;
-//   width: 18px;
-//   height: 18px;
-//   outline: 2px solid #aaa;
-//
-// }

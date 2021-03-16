@@ -37,13 +37,13 @@
 	font-family: poppins;
 	letter-spacing: 0.4px;
 	width: 100%;
+	padding: 0px 15px;
 }
 
 .news-blocks {
 	background-color: white;
   margin-bottom: 50px;
 	width: 100%;
-	padding: 0 15px;
 }
 
 .news-image {
@@ -51,6 +51,28 @@
 	max-width: 100%;
 	display: block;
 }
+
+.background1 {
+	position: relative;
+}
+
+.news-tag {
+ 	width: auto;
+ 	height: auto;
+ 	background-color: #4183d7;
+ 	float: right;
+ 	position: absolute;
+	right: 0px;
+	top: 15px;
+	padding: 5px;
+	color: white;
+	font-family: poppins-bold;
+	text-transform: uppercase;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
 
 .info-date {
 	border-left: solid 1px grey;
@@ -61,10 +83,23 @@
 
 .news-title {
 	font-family: poppins-bold;
-	color: #4183d7;
 	font-size: 16px;
 	margin-bottom: 15px;
 	text-transform: capitalize;
+	&:hover {
+		text-decoration: underline;}
+}
+
+#news-link-style-1 {
+	color: #926fb1;
+}
+
+#news-link-style-2 {
+	color: #2ecc71;
+}
+
+#news-link-style-3 {
+	color: #4183d7;
 }
 
 .news-p {
@@ -72,7 +107,9 @@
 	margin-bottom: 25px;
 }
 
-.read1 {
+.read1,
+.read2,
+.read3 {
 	width: 150px;
 	align-self: border-left;
 	margin-bottom: 30px;
@@ -109,6 +146,22 @@
 .date {
 	flex-grow: 1;
 }
+
+.read1, #tag1 {
+	background-color: #926fb1;
+}
+
+.read2, #tag2 {
+	background-color: #2ecc71;
+}
+
+.read3, #tag3 {
+	background-color: #4183d7;
+}
+
+// tag in read 1 'careers' = #926fb1
+// tag in read 2 'news' = #2ecc71
+// tag in read 2 'news' = #4183d7
 
 /*
   Carousel/Info-box button palette:

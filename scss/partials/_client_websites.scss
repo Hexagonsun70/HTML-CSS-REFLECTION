@@ -1,0 +1,36 @@
+.client-bar {
+  padding: 50px 0;
+  box-shadow: top
+}
+
+.client-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.arrow_box {
+  display: none;
+}
+
+.client-img {
+  height: auto;
+  width: auto;
+}
+
+.bw-img {
+  display: inline-block;
+}
+
+.colour-img {
+  display: none;
+}
+
+.client-img:hover {
+  .bw-img {
+    display: none;
+  }
+  .colour-img {
+    display: inline-block;
+  }
+}
