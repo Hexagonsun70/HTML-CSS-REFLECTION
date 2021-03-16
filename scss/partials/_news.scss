@@ -115,6 +115,10 @@
 	margin-bottom: 30px;
 }
 
+.read-more:hover {
+	filter: brightness(85%);
+}
+
 .news-footer {
 	display: flex;
 	border-top: 1px solid black;
