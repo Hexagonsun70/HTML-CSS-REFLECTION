@@ -1,15 +1,12 @@
 .client-bar {
   padding: 50px 0;
-  box-shadow: top
+  box-shadow: top;
 }
 
 .client-parent {
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-
-.arrow_box {
 }
 
 .client-img {
@@ -27,7 +24,7 @@
   display: none;
 }
 
-// This hover rule switches out the black & white imgs for coloured
+// This hover rule switches out the b&w imgs for coloured
 // and also allows the tooltip box and arrow to appear
 
 .client-img:hover {

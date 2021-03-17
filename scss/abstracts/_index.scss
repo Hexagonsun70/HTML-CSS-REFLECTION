@@ -1,2 +1,2 @@
-@use '_colours.scss'
-@use '_mixins.scss'
+@forward '../abstracts/colours';
+@forward '../abstracts/mixins';

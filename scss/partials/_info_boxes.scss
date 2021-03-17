@@ -1,11 +1,11 @@
 // Variable Definitions:
 
-$web-colour: #926fb1;
-$it-colour: #4183d7;
-$tele-colour: #D64541;
-$bespoke-colour: #67809F;
-$marketing-colour: #2ecc71;
-$cyber-colour: #F62459;
+$web-col: #926fb1;
+$it-col: #4183d7;
+$tele-col: #D64541;
+$bespoke-col: #67809F;
+$marketing-col: #2ecc71;
+$cyber-col: #F62459;
 
 //
 
@@ -140,120 +140,120 @@ h2 {
 }
 
 #info-icon1, #read-more1 {
-  background-color: $bespoke-colour;
+  background-color: $bespoke-col;
 }
 
 #info-icon2, #read-more2{
-  background-color: $it-colour;
+  background-color: $it-col;
 }
 
 #info-icon3, #read-more3 {
-  background-color: $marketing-colour;
+  background-color: $marketing-col;
 }
 
 #info-icon4, #read-more4 {
-  background-color: $tele-colour;
+  background-color: $tele-col;
 }
 
 #info-icon5, #read-more5 {
-  background-color: $web-colour;
+  background-color: $web-col;
 }
 
 #info-icon6, #read-more6 {
-  background-color: $cyber-colour;
+  background-color: $cyber-col;
 }
 
 #info-icon7, #read-more7 {
-  background-color: $web-colour;
+  background-color: $web-col;
 }
 
 #bespoke-anchor:hover {
 	.info-box {
-		background-color: $bespoke-colour;
+		background-color: $bespoke-col;
 		color: white;
 	}
 	.rule {background-color: white;}
 	#info-icon1, #read-more1 {
 		background-color: white;
-		color: $bespoke-colour;
+		color: $bespoke-col;
 	}
 	.fa-th {
-		color: $bespoke-colour;
+		color: $bespoke-col;
 	}
 }
 
 #it-anchor:hover {
 	.info-box {
-		background-color: $it-colour;
+		background-color: $it-col;
 		color: white;
 	}
 	.rule {background-color: white;}
 	#info-icon2, #read-more2 {
 		background-color: white;
-		color: $it-colour;
+		color: $it-col;
 	}
 	.fa-desktop {
-		color: $it-colour;
+		color: $it-col;
 	}
 }
 
 #marketing-anchor:hover {
 	.info-box {
-		background-color: $marketing-colour;
+		background-color: $marketing-col;
 		color: white;
 	}
 	.rule {background-color: white;}
 	#info-icon3, #read-more3 {
 		background-color: white;
-		color: $marketing-colour;
+		color: $marketing-col;
 	}
 	.fa-chart-bar {
-		color: $marketing-colour;
+		color: $marketing-col;
 	}
 }
 
 #tele-anchor:hover {
 	.info-box {
-		background-color: $tele-colour;
+		background-color: $tele-col;
 		color: white;
 	}
 	.rule {background-color: white;}
 	#info-icon4, #read-more4 {
 		background-color: white;
-		color: $tele-colour;
+		color: $tele-col;
 	}
 	.fa-phone {
-		color: $tele-colour;
+		color: $tele-col;
 	}
 }
 
 #cyber-anchor:hover {
 	.info-box {
-		background-color: $cyber-colour;
+		background-color: $cyber-col;
 		color: white;
 	}
 	.rule {background-color: white;}
 	#info-icon6, #read-more6 {
 		background-color: white;
-		color: $cyber-colour;
+		color: $cyber-col;
 	}
 	.fa-shield-alt {
-		color: $cyber-colour;
+		color: $cyber-col;
 	}
 }
 
 .purple-anchor:hover {
 	.info-box {
-		background-color: $web-colour;
+		background-color: $web-col;
 		color: white;
 	}
 	.rule {background-color: white;}
 	#info-icon5, #info-icon7,
 	#read-more5, #read-more7 {
 		background-color: white;
-		color: $web-colour;
+		color: $web-col;
 	}
 	.fa-code, .fa-graduation-cap {
-		color: $web-colour;
+		color: $web-col;
 	}
 }
