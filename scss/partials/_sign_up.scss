@@ -1,9 +1,11 @@
+@use '../abstracts' as *;
+
 .sign-up {
   display: flex;
   font-family: poppins;
-  color: #333645;
+  color: $dark-bg;
   padding: 50px 30px;
-  background-color: #DDD;
+  background-color: $input-bg;
   letter-spacing: 0.4;
   font-size: 16px;
 }
@@ -63,7 +65,7 @@
 }
 
 #privacy-link {
-  color: #333645;
+  color: $dark-bg;
   text-decoration: underline;
 }
 
@@ -75,7 +77,7 @@
 }
 
 .btn {
-  background-color: #333645;
+  background-color: $dark-bg;
   border: none;
   color: white;
   padding: 5px 15px;

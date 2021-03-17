@@ -1,4 +1,4 @@
-/* News Section divider */
+@use '../abstracts' as *;
 
 .span-n-line {
 	font-family: poppins-bold;
@@ -25,7 +25,7 @@
 
 .news {
 	padding: 30px 0px;
-	background-color: #f3f3f3;
+	background-color: $news-bg;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +59,7 @@
 .news-tag {
  	width: auto;
  	height: auto;
- 	background-color: #4183d7;
+ 	background-color: $it-col;
  	float: right;
  	position: absolute;
 	right: 0px;
@@ -75,9 +75,9 @@
 
 
 .info-date {
-	border-left: solid 1px grey;
-	border-bottom: solid 1px grey;
-	border-right: solid 1px grey;
+	border-left: solid 1px $input-bg;
+	border-bottom: solid 1px $input-bg;
+	border-right: solid 1px $input-bg;
 	padding: 30px;
 }
 
@@ -91,15 +91,15 @@
 }
 
 #news-link-style-1 {
-	color: #926fb1;
+	color: $web-col;
 }
 
 #news-link-style-2 {
-	color: #2ecc71;
+	color: $marketing-col;
 }
 
 #news-link-style-3 {
-	color: #4183d7;
+	color: $it-col;
 }
 
 .news-p {
@@ -152,27 +152,13 @@
 }
 
 .read1, #tag1 {
-	background-color: #926fb1;
+	background-color: $web-col;
 }
 
 .read2, #tag2 {
-	background-color: #2ecc71;
+	background-color: $marketing-col;
 }
 
 .read3, #tag3 {
-	background-color: #4183d7;
+	background-color: $it-col;
 }
-
-// tag in read 1 'careers' = #926fb1
-// tag in read 2 'news' = #2ecc71
-// tag in read 2 'news' = #4183d7
-
-/*
-  Carousel/Info-box button palette:
-    #926fb1 Web Design (developer Training)
-    #4183d7 IT support
-    #D64541 Telecoms Services
-    #67809F Bespoke
-    #2ECC71 Digital Marketing
-    #F62459 Cyber Security
- */

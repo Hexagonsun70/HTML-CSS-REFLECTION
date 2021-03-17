@@ -1,6 +1,9 @@
+@use '../abstracts' as *;
+
 .client-bar {
   padding: 50px 0;
   box-shadow: top;
+  display: none;
 }
 
 .client-parent {
@@ -12,6 +15,7 @@
 .client-img {
   height: auto;
   width: auto;
+  position: relative;
 }
 
 // These two rules makes the b&w image visible and the coloured invisible.
@@ -43,7 +47,7 @@
 }
 
 .client-img {
-  position: relative;
+
 }
 
 // Tooltip Rules
@@ -72,7 +76,7 @@
   font-family: poppins;
   text-align: center;
   color: white;
-  background: #333645;
+  background: $dark-bg;
 }
 
 .client-img h3 {
@@ -98,5 +102,5 @@
   --translate-y: calc(-1 * var(--arrow-size));
 
   border: var(--arrow-size) solid transparent;
-  border-top-color: #333645;
+  border-top-color: $dark-bg;
 }

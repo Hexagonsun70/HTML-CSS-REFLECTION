@@ -123,6 +123,78 @@ hr {
   justify-content: space-around;
 }
 
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333645;
+}
+
+.bar-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  font-family: poppins;
+}
+
+.child-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar-child {
+  flex-basis: 12.5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333645;
+  border-right: 1px solid #666;
+  border-left: 1px solid black;
+  border-bottom: 1px solid #DDD;
+  color: white;
+  padding: 15px;
+}
+.bar-child div {
+  margin-bottom: 5px;
+}
+
+#web-icon {
+  color: #926fb1;
+}
+
+#it-icon {
+  color: #4183d7;
+}
+
+#tele-icon {
+  color: #D64541;
+}
+
+#bespoke-icon {
+  color: #67809F;
+}
+
+#digi-icon {
+  color: #2ecc71;
+}
+
+#cyber-icon {
+  color: #F62459;
+}
+
+.sml-txt, .lrg-txt {
+  text-transform: uppercase;
+}
+
+.sml-text {
+  font-size: 0.7rem;
+}
+
+.lrg-txt {
+  font-size: 1.05rem;
+}
+
 .carousel {
   font-family: poppins;
   color: white;
@@ -153,7 +225,7 @@ hr {
 }
 
 .caro-link {
-  background-color: mediumpurple;
+  background-color: #926fb1;
   text-transform: uppercase;
   color: white;
   margin: auto;
@@ -168,15 +240,6 @@ hr {
   font-size: 1.2rem;
 }
 
-/*
-  Carousel/Info-box button palette:
-    #926fb1 Web Design (developer Training)
-    #4183d7 IT support
-    #D64541 Telecoms Services
-    #67809F Bespoke
-    #2ECC71 Digital Marketing
-    #F62459 Cyber Security
- */
 #caro-link1 {
   background-color: #926fb1;
 }
@@ -194,12 +257,16 @@ hr {
 }
 
 #caro-link5 {
-  background-color: #2ECC71;
+  background-color: #2ecc71;
   width: 350px;
 }
 
 #caro-link6 {
   background-color: #F62459;
+}
+
+.caro-link:hover {
+  filter: brightness(85%);
 }
 
 #caro1 {
@@ -273,7 +340,7 @@ hr {
   justify-content: center;
   align-items: center;
   padding: 35px;
-  border: 1px solid grey;
+  border: 1px solid #DDD;
   width: auto;
   max-width: 720px;
   border-radius: 3px;
@@ -532,7 +599,6 @@ strong {
   border-radius: 5px;
 }
 
-/* News Section divider */
 .span-n-line {
   font-family: poppins-bold;
   text-transform: uppercase;
@@ -606,9 +672,9 @@ strong {
 }
 
 .info-date {
-  border-left: solid 1px grey;
-  border-bottom: solid 1px grey;
-  border-right: solid 1px grey;
+  border-left: solid 1px #DDD;
+  border-bottom: solid 1px #DDD;
+  border-right: solid 1px #DDD;
   padding: 30px;
 }
 
@@ -694,15 +760,6 @@ strong {
   background-color: #4183d7;
 }
 
-/*
-  Carousel/Info-box button palette:
-    #926fb1 Web Design (developer Training)
-    #4183d7 IT support
-    #D64541 Telecoms Services
-    #67809F Bespoke
-    #2ECC71 Digital Marketing
-    #F62459 Cyber Security
- */
 .sign-up {
   display: flex;
   font-family: poppins;
@@ -882,6 +939,7 @@ footer a:hover {
 .client-bar {
   padding: 50px 0;
   box-shadow: top;
+  display: none;
 }
 
 .client-parent {
@@ -893,6 +951,7 @@ footer a:hover {
 .client-img {
   height: auto;
   width: auto;
+  position: relative;
 }
 
 .bw-img {
@@ -914,10 +973,6 @@ footer a:hover {
 }
 .client-img:hover .arrow {
   --scale: 1;
-}
-
-.client-img {
-  position: relative;
 }
 
 .arrow-box, .arrow {
@@ -963,4 +1018,10 @@ footer a:hover {
   --translate-y: calc(-1 * var(--arrow-size));
   border: var(--arrow-size) solid transparent;
   border-top-color: #333645;
+}
+
+@media (min-width: 768px) {
+  .client-bar {
+    display: block;
+  }
 }

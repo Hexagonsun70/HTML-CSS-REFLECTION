@@ -1,7 +1,9 @@
+@use '../abstracts' as *;
+
 .nm-info {
 	font-family: poppins;
   /* background-image: url(img/about.png); */
-  background-color: #333645;
+  background-color: $dark-bg;
   color: white;
 	padding: 50px 15px;
 }
@@ -30,7 +32,7 @@ strong {
 	justify-content: center;
 	align-items: center;
 	background-color: white;
-  color: #333645;
+  color: $dark-bg;
 	text-transform: uppercase;
 	font-size: 17px;
 	line-height: 35px;

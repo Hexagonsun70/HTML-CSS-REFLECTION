@@ -4,7 +4,16 @@
 
 // News section reduces to two items both sharing the same row.
 
-// Example website bar beaneath news appears.
+// Client website bar beaneath news appears.
+
+@media (min-width:768px) {
+  .client-bar {
+    display: block;
+  }
+
+}
+
+
 
 // The footer splits into two columns:
 // 1st col: Contact and Website sections.

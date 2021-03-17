@@ -1,24 +1,14 @@
-
-@import "partials/_reset.scss",
-
-        "partials/general_selectors.scss",
-
-        "partials/_fonts.scss",
-
-        "partials/_header.scss",
-
-        "partials/_carousel.scss",
-
-        "partials/_info_boxes.scss",
-
-        "partials/_about.scss",
-
-        "partials/_news",
-
-        "partials/_sign_up.scss",
-
-        "partials/_footer.scss",
-
-        "partials/_client_websites.scss",
-
-        "partials/_425_breakpoint.scss";
+@use "partials/_reset.scss";
+@use "partials/general_selectors.scss";
+@use "partials/_fonts.scss";
+@use "partials/_header.scss";
+@use "partials/_nav_bar.scss";
+@use "partials/_carousel.scss";
+@use "partials/_info_boxes.scss";
+@use "partials/_about.scss";
+@use "partials/_news.scss";
+@use "partials/_sign_up.scss";
+@use "partials/_footer.scss";
+@use "partials/_client_websites.scss";
+@use "breakpoints/_mobile_breakpoint.scss";
+@use "breakpoints/_tablet_breakpoint.scss";

@@ -1,13 +1,4 @@
-// Variable Definitions:
-
-$web-col: #926fb1;
-$it-col: #4183d7;
-$tele-col: #D64541;
-$bespoke-col: #67809F;
-$marketing-col: #2ecc71;
-$cyber-col: #F62459;
-
-//
+@use '../abstracts' as *;
 
 .anchor-wrapper {
 	  margin: 30px 0 0;
@@ -42,7 +33,7 @@ $cyber-col: #F62459;
   justify-content: center;
   align-items: center;
   padding: 35px;
-  border: 1px solid grey;
+  border: 1px solid $input-bg;
 	width: auto;
   max-width: 720px;
   border-radius: 3px;
