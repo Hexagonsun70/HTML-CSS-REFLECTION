@@ -1,0 +1,9 @@
+// XL Screen size: > 1260px 
+
+// width of elements should be 1170 to 1200 to centrally align
+
+@media only screen and (min-width: 1260px) {
+  .bar-child {
+    width: 192px;
+  }
+}

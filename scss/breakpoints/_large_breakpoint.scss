@@ -1,0 +1,13 @@
+// Large Screen Breakpoint: > 992px & < 1260px
+
+@media only screen and (max-width: 996px) {
+  .nav-bar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  .bar-child {
+    width: 154px;
+  }
+}

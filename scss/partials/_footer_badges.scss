@@ -1,0 +1,48 @@
+@use '../abstracts' as *;
+
+.badge-bar {
+  padding:         50px 0;
+  display:         none;
+  justify-content: center;
+  align-items:     center;
+}
+
+.badge-wrapper {
+  width: 970px;
+}
+
+.badge-parent {
+  display:         flex;
+  justify-content: space-between;
+  align-items:     center;
+  flex-wrap:       nowrap;
+
+}
+
+.badge-img {
+  height:  auto;
+  width: 100%;
+  padding: 0 20px;
+  flex-shrink:     2;
+  .bw-img {
+    display: inline-block;
+  }
+
+  .colour-img {
+    display: none;
+  }
+}
+
+// This hover rule switches out the b&w imgs for coloured
+// and also allows the tooltip box and arrow to appear.
+// see _client_websites partial for the rules of
+// .bw-img & .colour-img
+
+.badge-img:hover {
+  .bw-img {
+    display: none;
+  }
+  .colour-img {
+    display: inline-block;
+  }
+}

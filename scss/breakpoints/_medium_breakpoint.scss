@@ -1,0 +1,46 @@
+// Medium Screen Breakpoint: > 768px & < 992px
+
+// Client Badges Appear and are sized
+
+@media (min-width:768px) {
+  .client-bar {
+    display: block;
+  }
+}
+
+// Footer Badges appear and are sized
+// Badge widths, this can probably done more adaptively
+// but  I couldn't get flex-shrink to work for some reason.
+
+@media (min-width:768px) {
+  .badge-bar {
+    display: flex;
+  }
+  .badge-wrapper {
+    width: 750px;
+  }
+  .micrsoft {
+    width: 87.56px;
+    height: 53.3px;
+  }
+
+  .future {
+    width: 33.5px;
+    height: 53.3px;
+  }
+
+  .qms {
+     width: 45.69;
+     height: 53.3px;
+  }
+
+  .nfc {
+     width: 133.25px;
+     height: 53.3px;
+  }
+
+  .btm-badge-img {
+    width: 200px;
+  }
+}
+@media (min-width: 768) {}

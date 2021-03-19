@@ -7,8 +7,12 @@
 @use "partials/_info_boxes.scss";
 @use "partials/_about.scss";
 @use "partials/_news.scss";
+@use "partials/_client_websites.scss";
 @use "partials/_sign_up.scss";
 @use "partials/_footer.scss";
-@use "partials/_client_websites.scss";
+@use "partials/_footer_badges.scss";
 @use "breakpoints/_mobile_breakpoint.scss";
 @use "breakpoints/_tablet_breakpoint.scss";
+@use "breakpoints/_medium_breakpoint.scss";
+@use "breakpoints/_large_breakpoint.scss";
+@use "breakpoints/_xl_breakpoint.scss";

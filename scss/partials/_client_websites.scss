@@ -1,20 +1,20 @@
 @use '../abstracts' as *;
 
 .client-bar {
-  padding: 50px 0;
+  padding:    50px 0;
   box-shadow: top;
-  display: none;
+  display:    none;
 }
 
 .client-parent {
-  display: flex;
-  align-items: center;
+  display:         flex;
+  align-items:     center;
   justify-content: space-around;
 }
 
 .client-img {
-  height: auto;
-  width: auto;
+  height:   auto;
+  width:    auto;
   position: relative;
 }
 
@@ -46,10 +46,6 @@
   }
 }
 
-.client-img {
-
-}
-
 // Tooltip Rules
 
 .arrow-box, .arrow{
@@ -59,10 +55,12 @@
  // box relative to each other
   --arrow-size: 30px;
 
-  position: absolute;
-  left: 50%;
-  transform: translatex(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
-  top: -.25rem;
+  position:  absolute;
+  left:      50%;
+  transform: translatex(-50%)
+             translateY(var(--translate-y, 0))
+             scale(var(--scale));
+  top:       -.25rem;
 }
 
 .arrow-box {
@@ -70,37 +68,37 @@
   // it can be positioned relative to the arrow.
   --translate-y: calc(-100% - var(--arrow-size));
 
-  width: 260px;
-  height: auto;
-  padding: 20px;
+  width:       260px;
+  height:      auto;
+  padding:     20px;
   font-family: poppins;
-  text-align: center;
-  color: white;
-  background: $dark-bg;
+  text-align:  center;
+  color:       white;
+  background:  $dark-bg;
 }
 
 .client-img h3 {
   letter-spacing: 0.4px;
-  line-height: 20px;
-  font-size: 18px;
+  line-height:    20px;
+  font-size:      18px;
 }
 
 .tt-line {
   border-bottom: white 3px solid;
-  width: 28px;
-  display: inline-block;
-  margin: 10px 0;
+  width:         28px;
+  display:       inline-block;
+  margin:        10px 0;
 }
 
 .client-img p {
-  line-height: 22px;
+  line-height:    22px;
   letter-spacing: 0.4px;
-  font-size: 13px;
+  font-size:      13px;
 }
 
 .arrow {
   --translate-y: calc(-1 * var(--arrow-size));
 
-  border: var(--arrow-size) solid transparent;
+  border:           var(--arrow-size) solid transparent;
   border-top-color: $dark-bg;
 }
