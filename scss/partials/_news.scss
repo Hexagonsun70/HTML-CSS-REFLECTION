@@ -1,6 +1,6 @@
 @use '../abstracts' as *;
 
-.span-n-line {
+.span-con {
 	font-family: poppins-bold;
 	text-transform: uppercase;
 	font-size: 1.25rem;
@@ -24,20 +24,18 @@
 /* News blocks */
 
 .news {
-	padding: 30px 0px;
+	padding-top:      50px;
 	background-color: $news-bg;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+
 }
 
 .card-container {
-  max-width: 860px;
 	font-family: poppins;
 	letter-spacing: 0.4px;
 	width: 100%;
 	padding: 0px 15px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .news-blocks {
@@ -84,8 +82,10 @@
 .news-title {
 	font-family: poppins-bold;
 	font-size: 16px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	text-transform: capitalize;
+	display: flex;
+	align-items: baseline;
 	&:hover {
 		text-decoration: underline;}
 }
@@ -104,7 +104,7 @@
 
 .news-p {
 	font-size: 13px;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
 
 .read1,
@@ -112,7 +112,7 @@
 .read3 {
 	width: 150px;
 	align-self: border-left;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .read-more:hover {
@@ -121,7 +121,7 @@
 
 .news-footer {
 	display: flex;
-	border-top: 1px solid black;
+	border-top: 1px solid $input-bg;
 	padding-top: 30px;
 }
 

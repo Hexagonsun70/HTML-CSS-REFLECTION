@@ -671,15 +671,18 @@ h2 {
   color: #926fb1;
 }
 
-.nm-info {
+.ab-wrapper--mod {
+  background-color: #333645;
+}
+
+.about--mod {
   font-family: poppins;
   /* background-image: url(img/about.png); */
-  background-color: #333645;
   color: white;
   padding: 50px 15px;
 }
 
-.nm-info h1 {
+.about--title {
   font-size: 36px;
   line-height: 40px;
   letter-spacing: 0.4px;
@@ -687,15 +690,15 @@ h2 {
   margin-bottom: 28px;
 }
 
-.nm-info p {
+.about--strong {
+  font-family: poppins-bold;
+}
+
+.about--p {
   margin-bottom: 25px;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.4px;
-}
-
-strong {
-  font-family: poppins-bold;
 }
 
 .culture {
@@ -715,7 +718,7 @@ strong {
   border-radius: 5px;
 }
 
-.span-n-line {
+.span-con {
   font-family: poppins-bold;
   text-transform: uppercase;
   font-size: 1.25rem;
@@ -738,20 +741,17 @@ strong {
 
 /* News blocks */
 .news {
-  padding: 30px 0px;
+  padding-top: 50px;
   background-color: #f3f3f3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .card-container {
-  max-width: 860px;
   font-family: poppins;
   letter-spacing: 0.4px;
   width: 100%;
   padding: 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .news-blocks {
@@ -797,8 +797,10 @@ strong {
 .news-title {
   font-family: poppins-bold;
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-transform: capitalize;
+  display: flex;
+  align-items: baseline;
 }
 .news-title:hover {
   text-decoration: underline;
@@ -818,7 +820,7 @@ strong {
 
 .news-p {
   font-size: 13px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .read1,
@@ -826,7 +828,7 @@ strong {
 .read3 {
   width: 150px;
   align-self: border-left;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .read-more:hover {
@@ -835,7 +837,7 @@ strong {
 
 .news-footer {
   display: flex;
-  border-top: 1px solid black;
+  border-top: 1px solid #DDD;
   padding-top: 30px;
 }
 
@@ -1180,6 +1182,73 @@ footer a:hover {
 }
 
 @media (min-width: 768px) {
+  .about-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-flex {
+    width: 720px;
+  }
+
+  .about-child-1 {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .span-line-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .span-n-line {
+    width: 720px;
+  }
+
+  .card-container {
+    width: 750px;
+    display: flex;
+  }
+
+  .news-containers {
+    width: 50%;
+    padding: 0 15px;
+  }
+
+  .info-date {
+    max-height: 325px;
+  }
+
+  .news-info {
+    height: 180px;
+  }
+
+  .news-title {
+    height: 30px;
+  }
+
+  .news-p {
+    height: 40px;
+  }
+
+  .footer-wrapper {
+    height: 85px;
+  }
+
+  .news-card-3 {
+    display: none;
+  }
+
+  .news-footer h4,
+.news-footer span {
+    font-size: 14px;
+  }
+
+  .news-footer {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
   .client-parent-wrapper {
     display: flex;
     justify-content: center;
@@ -1269,8 +1338,34 @@ footer a:hover {
   }
 }
 @media (min-width: 992px) {
+  .ab-wrapper--mod {
+    background-image: url(../img/about.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+  }
+
+  .about-flex {
+    width: 970px;
+  }
+}
+@media (min-width: 992px) {
+  .span-n-line {
+    width: 970px;
+  }
+
+  .card-container {
+    width: 970px;
+    padding: 0;
+  }
+}
+@media (min-width: 992px) {
   .client-parent-wrapper {
     width: 970px;
+  }
+
+  .client-parent {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .busseys {
@@ -1364,6 +1459,29 @@ footer a:hover {
   }
 }
 @media (min-width: 1260px) {
+  .about-flex {
+    display: flex;
+    width: 1170px;
+  }
+
+  .about-child {
+    width: 50%;
+  }
+}
+@media (min-width: 1260px) {
+  .span-n-line {
+    width: 1170px;
+  }
+
+  .card-container {
+    width: 1170px;
+  }
+
+  .news-card-3 {
+    display: flex;
+  }
+}
+@media (min-width: 1260px) {
   .client-parent-wrapper {
     width: 1200px;
   }
@@ -1375,7 +1493,7 @@ footer a:hover {
     width: auto;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1260px) {
   .sign-up {
     width: 1170px;
   }

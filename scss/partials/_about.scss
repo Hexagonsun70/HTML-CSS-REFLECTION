@@ -1,14 +1,17 @@
 @use '../abstracts' as *;
 
-.nm-info {
+.ab-wrapper--mod {
+	background-color: $dark-bg;
+}
+
+.about--mod {
 	font-family: poppins;
   /* background-image: url(img/about.png); */
-  background-color: $dark-bg;
   color: white;
 	padding: 50px 15px;
 }
 
-.nm-info h1 {
+.about--title {
 	font-size: 36px;
 	line-height: 40px;
 	letter-spacing: 0.4px;
@@ -16,15 +19,15 @@
 	margin-bottom: 28px;
 }
 
-.nm-info p {
+.about--strong {
+	font-family: poppins-bold;
+}
+
+.about--p {
 	margin-bottom: 25px;
 	font-size: 16px;
 	line-height: 30px;
 	letter-spacing: 0.4px;
-}
-
-strong {
-	font-family: poppins-bold;
 }
 
 .culture {

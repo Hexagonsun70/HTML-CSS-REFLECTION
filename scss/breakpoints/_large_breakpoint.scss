@@ -13,10 +13,27 @@
 }
 
 @media (min-width: 992px) {
+    .ab-wrapper--mod {
+       background-image: url(../img/about.png);
+       background-repeat: no-repeat;
+       background-position: 100%;
+    }
 
+    .about-flex {
+      width: 970px;
+    }
 }
 
+// Resize the news cards
+
 @media (min-width: 992px) {
+  .span-n-line {
+    width: 970px;
+  }
+  .card-container {
+    width: 970px;
+    padding: 0;
+  }
 
 }
 
@@ -25,6 +42,13 @@
 @media (min-width: 992px) {
   .client-parent-wrapper {
     width: 970px;
+    // display: flex;
+    // justify-content: space-between;
+  }
+
+  .client-parent {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .busseys {

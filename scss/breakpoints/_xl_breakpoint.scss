@@ -2,7 +2,28 @@
 
 // width of elements should be 1170 to 1200 to centrally align
 
+@media (min-width:1260px) {
+  .about-flex {
+    display: flex;
+    width: 1170px;
+  }
+  .about-child {
+    width: 50%;
+  }
+}
 
+@media (min-width:1260px) {
+  .span-n-line {
+    width: 1170px;
+  }
+  .card-container {
+    width: 1170px;
+  }
+
+  .news-card-3 {
+    display: flex;
+  }
+}
 
 @media (min-width: 1260px) {
   .client-parent-wrapper {
@@ -17,7 +38,7 @@
 }
 // Resize the width of the sign up section
 
-@media (min-width: 1250px) {
+@media (min-width:1260px) {
   .sign-up {
     width: 1170px;
   }
@@ -25,7 +46,7 @@
 
 // Footer Info parent/flex child resizing.
 
-@media (min-width: 1260px) {
+@media (min-width:1260px) {
   .footer-rows {
     justify-content: center;
     width: 1200px;

@@ -1,9 +1,74 @@
 // Medium Screen Breakpoint: > 768px & < 992px
 
+@media (min-width:768px) {
+  .about-wrapper {
+    display: flex;
+    justify-content: center;
+  }
 
+  .about-flex {
+    width: 720px;
+  }
 
+  .about-child-1 {
+    width: 100%;
+  }
+}
 
 // News Section loses one card and aligns the remaining two in one row:
+
+@media (min-width:768px) {
+  .span-line-container {
+    display:         flex;
+    justify-content: center;
+  }
+
+  .span-n-line {
+    width: 720px;
+  }
+
+  .card-container {
+    width: 750px;
+    display: flex;
+
+  }
+  .news-containers {
+    width: 50%;
+    padding: 0 15px;
+  }
+
+  .info-date {
+    max-height: 325px;
+  }
+
+  .news-info {
+    height: 180px;
+  }
+
+  .news-title {
+    height: 30px;
+  }
+
+  .news-p {
+    height: 40px;
+  }
+
+  .footer-wrapper {
+    height: 85px;
+  }
+  .news-card-3 {
+    display: none;
+  }
+
+  .news-footer h4,
+  .news-footer span {
+    font-size: 14px;
+  }
+  .news-footer {
+    padding-bottom: 30px;
+  }
+
+}
 
 // Client Badges Appear and are sized (not the most efficient way to size,
 // will amend it once I've learnt the technique to resize images fluidly):
@@ -14,6 +79,7 @@
     justify-content: center;
     width: 750px;
   }
+
   .client-bar {
     display: flex;
     justify-content: center;
