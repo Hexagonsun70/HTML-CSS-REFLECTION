@@ -1,5 +1,24 @@
 // XL Screen size: > 1260px
+@media (min-width:1260px) {
+  .info-boxes {
+    width: 1170px;
+  }
+  .flex-break {
+    flex-basis: 100%;
+    height: 0;
+  }
 
+  #tele-anchor,
+  #web-anchor,
+  #cyber-anchor,
+  #developer-anchor {
+    width: 25%;
+  }
+
+  .four-flex {
+    height: 410px;
+  }
+}
 // width of elements should be 1170 to 1200 to centrally align
 
 @media (min-width:1260px) {

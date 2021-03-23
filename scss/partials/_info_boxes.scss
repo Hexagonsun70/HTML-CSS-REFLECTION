@@ -1,8 +1,18 @@
 @use '../abstracts' as *;
 
+// Info wrapper serves as a container to align the flex parent
+.info-wrapper {
+	width: 100%;
+}
+
+// Anchor Wrapper determines that the flex elements may be laid out in.
+// Check Media queries for Changes in width.
+
 .anchor-wrapper {
 	  margin: 30px 0 0;
+		display: flex;
 }
+
 
 .info-boxes {
   position: relative;
@@ -10,7 +20,10 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 50px;
+	width: auto;
 }
 
 .info-anchor {
@@ -37,6 +50,7 @@
 	width: auto;
   max-width: 720px;
   border-radius: 3px;
+	height: 330px;
 }
 
 .info-icon {
@@ -50,7 +64,7 @@
 	align-items: center;
 }
 
-h2 {
+.info-title {
   flex: 1;
   flex-basis: 100%;
   margin-bottom: 15px;
@@ -157,6 +171,9 @@ h2 {
 #info-icon7, #read-more7 {
   background-color: $web-col;
 }
+
+// I think a mixin replacing the hover rules for info-boxes would work, but I
+// couldn't figure out how to do it.
 
 #bespoke-anchor:hover {
 	.info-box {

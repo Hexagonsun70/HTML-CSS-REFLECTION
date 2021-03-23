@@ -2,14 +2,25 @@
 
 // Large Screen Breakpoint: > 992px & < 1260px
 
-@media only screen and (max-width: 996px) {
+@media only screen and (max-width: 992px) {
   .nav-bar {
     display: none;
   }
 }
 
 @media (min-width: 992px) {
+  #bespoke-anchor,
+  #it-anchor,
+  #marketing-anchor {
+    flex: 1;
+  }
+  .three-flex {
+    height: 400px;
+  }
 
+  .info-boxes {
+    width: 970px;
+  }
 }
 
 @media (min-width: 992px) {

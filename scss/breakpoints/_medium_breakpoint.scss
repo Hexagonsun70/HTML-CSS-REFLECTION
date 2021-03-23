@@ -1,6 +1,30 @@
 // Medium Screen Breakpoint: > 768px & < 992px
 
 @media (min-width:768px) {
+  #tele-anchor,
+  #web-anchor,
+  #cyber-anchor,
+  #developer-anchor {
+    width: 50%;
+  }
+
+  .info-box {
+    width: 100%;
+  }
+
+  .info-boxes {
+    width: 750px;
+  }
+
+  .three-flex {
+    width: 100%;
+  }
+}
+
+// Uses flex to align the about section to the center, defines width for the
+// section for this breakpoint.
+
+@media (min-width:768px) {
   .about-wrapper {
     display: flex;
     justify-content: center;
