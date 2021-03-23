@@ -13,8 +13,7 @@
 }
 
 .client-img {
-  height:   auto;
-  width:    auto;
+  box-sizing: content-box;
   position: relative;
 }
 

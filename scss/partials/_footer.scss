@@ -1,32 +1,41 @@
 @use 'abstracts' as *;
 
-.footer-info {
-  font-family: poppins;
-	letter-spacing: 0.4;
-  font-size: 13px;
-  line-height: 22px;
+.footer-container {
+  font-family:      poppins;
+  letter-spacing:   0.4;
+  font-size:        13px;
+  line-height:      22px;
   background-color: $dark-bg;
-  color: white;
-  padding: 50px 0;
+  color:            white;
+  padding:          50px 0;
+
 }
 
-ul {
-  padding: 0;
+.footer-rows {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.about-list {
+  padding:         0;
   list-style-type: none;
-  margin-bottom: 30px;
-  font-size: 13px;
+  margin-bottom:   30px;
+  font-size:       13px;
 }
 
-.contact,
-address,
+.footer-title,
+.address,
 .contact-links,
 .list-title,
-ul,
-.website,
-.map-n-copy,
-.social-title,
-{
+.about-list,
+.website-section__title,
+.map-n-copy {
   margin-bottom: 26px;
+  padding:       0 15px;
+}
+
+.social-title {
   padding: 0 15px;
 }
 
@@ -42,36 +51,31 @@ footer a {
 }
 
 .social-links {
-  font-size: 16px;
+  font-size:      16px;
   text-transform: uppercase;
 }
 
-.social-boxes {
-  font-size: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.social-row {
+  align-content:   center;
+  display:         flex;
+  justify-content: space-around;
+  flex-wrap:       nowrap;
 }
 
-.social-boxes a {
-  width: 45%;
-  margin: 0 8px;
+.social-a-container {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 15px;
 }
 
 .social-container {
-  flex: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 55px;
-  float: left;
+  display:          flex;
+  justify-content:  center;
+  align-items:      center;
+  height:           55px;
+  margin-top:       30px;
   background-color: $box-col;
-}
-
-.soc-con-3 {
-  margin-top: 30px;
+  font-size: 1.75rem;
 }
 
 .soc-con-1:hover {

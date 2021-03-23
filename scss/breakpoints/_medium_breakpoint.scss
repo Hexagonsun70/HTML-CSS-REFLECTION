@@ -1,11 +1,66 @@
 // Medium Screen Breakpoint: > 768px & < 992px
 
-// Client Badges Appear and are sized
+
+
+
+// News Section loses one card and aligns the remaining two in one row:
+
+// Client Badges Appear and are sized (not the most efficient way to size,
+// will amend it once I've learnt the technique to resize images fluidly):
 
 @media (min-width:768px) {
-  .client-bar {
-    display: block;
+  .client-parent-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 750px;
   }
+  .client-bar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .client-img {
+    padding: 0 15px;
+    min-width: 0;
+  }
+
+  .busseys {
+    width: 121.6px;
+  }
+
+  .crane {
+    width: 184.95px;
+  }
+
+  .beat {
+    width: 46.39px;
+  }
+
+  .northern-d {
+    width: 207.5px;
+  }
+
+}
+
+// Nav section of footer resizes and aligns into columns
+
+@media (min-width:768px) {
+ .footer-rows {
+   width: 750px;
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .contact-about-row,
+ .website-social-row {
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .contact-about__child,
+ .website-social__child {
+   width: 50%;
+ }
 }
 
 // Footer Badges appear and are sized

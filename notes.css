@@ -1,23 +1,12 @@
+/*
 
-input[type=checkbox]:checked + .label:before {
-    content: "\2713";
-}
+  Need to add checkbox to input.
 
-input[type=checkbox]:checked {
-    display: none;
-}
+  Need to add shading to the client bar background top.
 
--moz-appearance:none;
-    -webkit-appearance:none;
-    -o-appearance:none;
+  Need to add grow effect to the news card images.
 
-ul, li {
-       margin: 0;
-       padding: 0;
-       border: 0;
-       outline: 0;
-       font-weight: inherit;
-       font-size: 100%;
-       font-family: inherit;
-       vertical-align: baseline;
-}
+  Need to change the Read More buttons to not use filter and use the dark
+  colours instead
+
+ */

@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 // Large Screen Breakpoint: > 992px & < 1260px
 
 @media only screen and (max-width: 996px) {
@@ -6,8 +8,125 @@
   }
 }
 
-@media only screen and (min-width: 996px) {
-  .bar-child {
-    width: 154px;
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+// Resize the client badges to fit the screen.
+
+@media (min-width: 992px) {
+  .client-parent-wrapper {
+    width: 970px;
   }
+
+  .busseys {
+    width: 168.75px;
+  }
+
+  .crane {
+    width: 257.61px;
+  }
+
+  .beat {
+    width: 64.63px;
+  }
+
+  .northern-d {
+    width: 289.02px;
+  }
+
+}
+
+
+// Make the two input fields align one one line. makes a section container
+//
+
+@media (min-width:992px) {
+  .sign-up-section {
+    background-color: $input-bg;
+    display:          flex;
+    justify-content:  center;
+  }
+  .sign-up {
+    width: 940px;
+  }
+
+  .input-name,
+  .input-email {
+    width: 100%;
+  }
+
+  .input-field {
+    width:  100%;
+    height: 45px;
+    border: #777;
+    margin: 0 15px;
+  }
+  .input-container {
+    display:         flex;
+    justify-content: center;
+
+  }
+}
+
+
+// Footer Info parent/flex child resizing.
+
+@media (min-width:992px) {
+  .footer-rows {
+    width: 970px;
+
+  }
+  .contact-about__child,
+  .website-social__child {
+    width: 50%;
+  }
+}
+
+
+// Resize badges for large breakpoint
+
+@media only screen and (min-width: 996px) {
+
+  .badge-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .badge-parent {
+    width: 970px;
+  }
+  .micrsoft {
+    width: 140.2px;
+    height: 85.33px;
+  }
+
+  .future {
+    width: 69px;
+    height: 110.09px;
+  }
+
+  .qms {
+     width: 85.2px;
+     height: 99.39px;
+  }
+
+  .nfc {
+     width: 200.2px;
+     height: 80.08px;
+  }
+
+  .btm-badge-img {
+    width: 273.33px;
+  }
+
 }

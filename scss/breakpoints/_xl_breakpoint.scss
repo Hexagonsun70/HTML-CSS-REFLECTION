@@ -1,9 +1,61 @@
-// XL Screen size: > 1260px 
+// XL Screen size: > 1260px
 
 // width of elements should be 1170 to 1200 to centrally align
 
-@media only screen and (min-width: 1260px) {
-  .bar-child {
-    width: 192px;
+
+
+@media (min-width: 1260px) {
+  .client-parent-wrapper {
+    width: 1200px;
+  }
+  .busseys,
+  .crane,
+  .beat,
+  .northern-d {
+    width: auto;
+  }
+}
+// Resize the width of the sign up section
+
+@media (min-width: 1250px) {
+  .sign-up {
+    width: 1170px;
+  }
+}
+
+// Footer Info parent/flex child resizing.
+
+@media (min-width: 1260px) {
+  .footer-rows {
+    justify-content: center;
+    width: 1200px;
+  }
+  .contact-about__child,
+  .website-social__child {
+    width: 25%
+  }
+}
+
+// Resize badges at XL Breakpoint
+
+@media (min-width: 1260px) {
+  .badge-wrapper {
+    width: 1200px;
+    height: 166px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .badge-img {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .micrsoft,
+  .future,
+  .qms,
+  .nfc,
+  .btm-badge-img {
+    width:  auto;
+    height: auto;
   }
 }
