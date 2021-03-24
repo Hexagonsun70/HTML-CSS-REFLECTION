@@ -1,52 +1,97 @@
 @use '../abstracts' as *;
 
-.logo {
-	margin: 10px auto 10px 10px;
-}
-
-.phone-box {
-  width: 30px;
-  height: 30px;
-  margin-left: 20px;
-  margin-right: 40px;
-  margin-top: 30px;
-}
-
-.phone-box img {
-  /* makes the image wrap to the box size set in .phone box */
-  width: 100%;
-  height: auto;
-
-}
-
-.burger-box {
-  background-color: black;
-  border-radius: 3px;
-  color: white;
-  display: grid;
-  justify-content: center;
-  margin-right: 25px;
-  width: 50px;
-  height: 50px;
-  margin-top: 19px;
-}
-
-.burger {
-  grid-row-start: 1;
-  grid-row-end: 1;
-  filter: invert(100%);
-  width: 50px;
-}
-
-.search {
-  width: 99%;
-  height: 47px;
-  background-color: lightgrey;
-  border: solid 2px darkgrey;
-  margin-left: 5px;
+.header-wrapper {
+	padding: 20px 15px;
+	width:   100%;
+	height:  auto;
 }
 
 .header-flex {
-  display: flex;
+  display:         flex;
   justify-content: space-around;
+	align-items:     center;
+	height:          93px;
+}
+
+.logo-box {
+	margin:    10px auto 10px 10px;
+	width:     100%;
+	height:    auto;
+	max-width: 402px;
+}
+
+.img-shrink {
+	width:  100%;
+	height: auto;
+}
+
+.phone-box {
+  font-size: 2rem;
+  margin:    0 20px;
+
+  // margin-top: 30px;
+	padding:         5px;
+	text-decoration: none;
+}
+
+.phone-box .fa-phone-alt {
+  /* makes the image wrap to the box size set in .phone box */
+  width:  100%;
+  height: auto;
+	color:  #333645;
+}
+
+.fa-phone-alt:hover {
+	text-decoration: underline;
+}
+
+.burger-box {
+	display:          flex;
+	flex-wrap:        wrap;
+	justify-content:  center;
+  background-color: #333645;
+  border-radius:    3px;
+  color:            white;
+  width:            65px;
+	height:           60px;
+	padding:          5px 15px;
+  // margin-top: 19px;
+}
+
+.burger-div,
+.burger-flex-break,
+.burger-text,
+.burger-flex-break {
+	height: 0;
+}
+
+.burger-img-div {
+	height: 35px;
+}
+
+.fa-bars {
+	font-size: 2rem;
+}
+
+.burger-text {
+	align-self:     baseline;
+	text-align:     center;
+	font-family:    poppins;
+	text-transform: uppercase;
+	font-size:      12px;
+}
+
+.search {
+  width:               100%;
+  height:              47px;
+  background-color:    lightgrey;
+  border:              solid 2px darkgrey;
+	background-image:    url(../img/search-icon.png);
+	background-size:     contain;
+	background-repeat:   no-repeat;
+	background-position: right;
+}
+
+.search-2 {
+	display: none;
 }

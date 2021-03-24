@@ -1,69 +1,74 @@
 @use "../abstracts" as *;
 
 .nav-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display:          flex;
+  align-items:      center;
+  justify-content:  center;
   background-color: $dark-bg;
-  position: relative;
-  height: 99px;
+  position:         relative;
+  height:           99px;
 }
 
 .bar-wrapper {
-  display: flex;
+  display:     flex;
   align-items: flex-start;
   font-family: poppins;
 }
 
 .child-wrapper {
-  display: flex;
+  display:         flex;
   justify-content: center;
-  align-items: center;
-
+  align-items:     center;
+  width:           100%;
 }
 
 .bar-child {
-  display: flex;
-  align-items: center;
+  display:        flex;
+  align-items:    center;
   flex-direction: column;
-  height: 99px;
-  border-right: 0.5px solid #666;
-  border-left: 0.5px solid  black;
-  color: white;
-  padding: 15px;
+  height:         99px;
+  border-right:   0.5px solid #666;
+  border-left:    0.5px solid  black;
+  color:          white;
+  padding:        19px 0;
+  width:          154.33px;
+}
+
+.bar-icon {
+  margin-bottom: 10px;
 }
 
 .left-child {
-  height: 99px;
+  height:       99px;
   border-right: 0.5px solid #666;
 }
 
 .right-child {
-  height: 99px;
+  height:       99px;
   border-right: 0.5px solid black;
 }
 
 .table {
   display: table;
-  margin: 0 auto;
-  width: 100vw;
+  margin:  0 auto;
+  width:   100vw;
 }
 
 .bar-tt {
   position: absolute;
-  top: 100%;
-  left: 0%;
-  z-index: 10;
+  top:      100%;
+  left:     0%;
+  z-index:  10;
 }
 
 .horizontal-list{
-  display: none;
-  list-style: none;
+  display:        none;
+  list-style:     none;
   text-transform: uppercase;
   & li {
-    display: inline;
-    font-size: 16px;
-    line-height: 45px;
+    display:        inline;
+    font-size:      13px;
+    line-height:    45px;
     letter-spacing: 0.4;
 
   }
@@ -72,16 +77,20 @@
 .sml-txt, .lrg-txt {
   text-transform: uppercase;
   letter-spacing: 0.4px;
-  line-height: 18px;
+  line-height:    18px;
 }
 
 .sml-txt {
   font-size: 10px;
+  line-height: 1;
 }
 
 .lrg-txt {
   font-size: 18px;
 }
+
+// These can probably be done with mixins, but couldn't figure out how to
+// implement one with so many differing variables.
 
 #web-bar-anchor:hover {
 	.bar-child {

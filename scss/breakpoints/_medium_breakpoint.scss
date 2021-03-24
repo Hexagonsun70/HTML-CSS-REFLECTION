@@ -1,6 +1,50 @@
 // Medium Screen Breakpoint: > 768px & < 992px
 
 @media (min-width:768px) {
+  .header-wrapper {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .phone-box,
+  .search-div {
+    display: none;
+  }
+
+  .search-2 {
+    display: inline-block;
+    align-items: center;
+    height:           60px;
+    margin: 0 30px;
+  }
+
+  .search-field {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 75%;
+    background: #f1f1f1;
+    height: inherit;
+  }
+
+  .search-btn {
+    background-color: #999aa2;
+    width:            25%;
+    height:           100%;
+    border-radius:    0 3px 3px 0;
+    border-left:      none;
+    border-style:     none;
+    font-size:        1.8rem;
+    color:            white;
+    float: left;
+  }
+}
+
+//
+
+@media (min-width:768px) {
   #tele-anchor,
   #web-anchor,
   #cyber-anchor,
@@ -26,7 +70,7 @@
 
 @media (min-width:768px) {
   .about-wrapper {
-    display: flex;
+    display:         flex;
     justify-content: center;
   }
 
@@ -99,9 +143,9 @@
 
 @media (min-width:768px) {
   .client-parent-wrapper {
-    display: flex;
+    display:         flex;
     justify-content: center;
-    width: 750px;
+    width:           750px;
   }
 
   .client-bar {
@@ -136,14 +180,14 @@
 
 @media (min-width:768px) {
  .footer-rows {
-   width: 750px;
-   display: flex;
+   width:     750px;
+   display:   flex;
    flex-wrap: wrap;
  }
 
  .contact-about-row,
  .website-social-row {
-   display: flex;
+   display:   flex;
    flex-wrap: wrap;
  }
 
@@ -165,22 +209,22 @@
     width: 750px;
   }
   .micrsoft {
-    width: 87.56px;
+    width:  87.56px;
     height: 53.3px;
   }
 
   .future {
-    width: 33.5px;
+    width:  33.5px;
     height: 53.3px;
   }
 
   .qms {
-     width: 45.69;
+     width:  45.69;
      height: 53.3px;
   }
 
   .nfc {
-     width: 133.25px;
+     width:  133.25px;
      height: 53.3px;
   }
 

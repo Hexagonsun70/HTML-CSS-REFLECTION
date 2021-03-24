@@ -1,4 +1,26 @@
 // XL Screen size: > 1260px
+// width of elements should be 1170 to 1200 to centrally align
+
+
+
+@media (min-width:1260px) {
+  .bar-child {
+    width: 192.67px;
+  }
+  .horizontal-list li {
+      font-size:      16px;
+  }
+
+}
+
+@media (min-width:1260px) {
+  .caro-box {
+    width: 1170px;
+  }
+}
+
+//
+
 @media (min-width:1260px) {
   .info-boxes {
     width: 1170px;
@@ -15,11 +37,15 @@
     width: 25%;
   }
 
+  .three-flex,
   .four-flex {
-    height: 410px;
+    height: 312px;
   }
 }
-// width of elements should be 1170 to 1200 to centrally align
+
+// Uses flex to divide the central container of the about section to divide
+// it into two pieces (.aboutchild- width 50% ). Changes the background size
+// of the nm background logo so that it takes up the whole section.
 
 @media (min-width:1260px) {
   .about-flex {
@@ -29,7 +55,14 @@
   .about-child {
     width: 50%;
   }
+
+  .ab-wrapper--mod {
+    background-size: contain;
+  }
 }
+
+// Resizes the span & line container and news box container to fit the new
+// layout at this breakpoint. Makes the third news box display.
 
 @media (min-width:1260px) {
   .span-n-line {
@@ -42,7 +75,11 @@
   .news-card-3 {
     display: flex;
   }
+
 }
+
+// Resizes the client bar container to be inline with the new layout.
+// Changes the width of the images so they
 
 @media (min-width: 1260px) {
   .client-parent-wrapper {
@@ -55,6 +92,7 @@
     width: auto;
   }
 }
+
 // Resize the width of the sign up section
 
 @media (min-width:1260px) {
@@ -76,7 +114,7 @@
   }
 }
 
-// Resize badges at XL Breakpoint
+// Resize badges at XL Breakpoint and changes their layout.
 
 @media (min-width: 1260px) {
   .badge-wrapper {

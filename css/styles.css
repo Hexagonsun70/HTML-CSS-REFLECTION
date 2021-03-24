@@ -72,54 +72,97 @@ hr {
   margin: 0;
 }
 
-.logo {
-  margin: 10px auto 10px 10px;
-}
-
-.phone-box {
-  width: 30px;
-  height: 30px;
-  margin-left: 20px;
-  margin-right: 40px;
-  margin-top: 30px;
-}
-
-.phone-box img {
-  /* makes the image wrap to the box size set in .phone box */
+.header-wrapper {
+  padding: 20px 15px;
   width: 100%;
   height: auto;
-}
-
-.burger-box {
-  background-color: black;
-  border-radius: 3px;
-  color: white;
-  display: grid;
-  justify-content: center;
-  margin-right: 25px;
-  width: 50px;
-  height: 50px;
-  margin-top: 19px;
-}
-
-.burger {
-  grid-row-start: 1;
-  grid-row-end: 1;
-  filter: invert(100%);
-  width: 50px;
-}
-
-.search {
-  width: 99%;
-  height: 47px;
-  background-color: lightgrey;
-  border: solid 2px darkgrey;
-  margin-left: 5px;
 }
 
 .header-flex {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 93px;
+}
+
+.logo-box {
+  margin: 10px auto 10px 10px;
+  width: 100%;
+  height: auto;
+  max-width: 402px;
+}
+
+.img-shrink {
+  width: 100%;
+  height: auto;
+}
+
+.phone-box {
+  font-size: 2rem;
+  margin: 0 20px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.phone-box .fa-phone-alt {
+  /* makes the image wrap to the box size set in .phone box */
+  width: 100%;
+  height: auto;
+  color: #333645;
+}
+
+.fa-phone-alt:hover {
+  text-decoration: underline;
+}
+
+.burger-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #333645;
+  border-radius: 3px;
+  color: white;
+  width: 65px;
+  height: 60px;
+  padding: 5px 15px;
+}
+
+.burger-div,
+.burger-flex-break,
+.burger-text,
+.burger-flex-break {
+  height: 0;
+}
+
+.burger-img-div {
+  height: 35px;
+}
+
+.fa-bars {
+  font-size: 2rem;
+}
+
+.burger-text {
+  align-self: baseline;
+  text-align: center;
+  font-family: poppins;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.search {
+  width: 100%;
+  height: 47px;
+  background-color: lightgrey;
+  border: solid 2px darkgrey;
+  background-image: url(../img/search-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.search-2 {
+  display: none;
 }
 
 .nav-bar {
@@ -141,6 +184,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .bar-child {
@@ -151,7 +195,12 @@ hr {
   border-right: 0.5px solid #666;
   border-left: 0.5px solid black;
   color: white;
-  padding: 15px;
+  padding: 19px 0;
+  width: 154.33px;
+}
+
+.bar-icon {
+  margin-bottom: 10px;
 }
 
 .left-child {
@@ -184,7 +233,7 @@ hr {
 }
 .horizontal-list li {
   display: inline;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 45px;
   letter-spacing: 0.4;
 }
@@ -197,6 +246,7 @@ hr {
 
 .sml-txt {
   font-size: 10px;
+  line-height: 1;
 }
 
 .lrg-txt {
@@ -333,6 +383,10 @@ hr {
   align-items: center;
 }
 
+.caro-box {
+  width: 940px;
+}
+
 .caro-p {
   margin: 0px 0px 35px;
   font-size: 20px;
@@ -463,7 +517,7 @@ hr {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding: 35px;
+  padding: 30px;
   border: 1px solid #DDD;
   width: auto;
   max-width: 720px;
@@ -476,7 +530,7 @@ hr {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -485,7 +539,7 @@ hr {
 .info-title {
   flex: 1;
   flex-basis: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-align: center;
   font-style: normal;
   font-size: 18px;
@@ -507,7 +561,7 @@ hr {
   font-size: 13px;
   line-height: 22px;
   letter-spacing: 0.4px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   flex-basis: 100%;
 }
 
@@ -1101,10 +1155,10 @@ hr {
   font-size: 16px;
 }
 
-footer a {
+.link--style {
   color: white;
 }
-footer a:hover {
+.link--style:hover {
   text-decoration: underline;
 }
 
@@ -1134,6 +1188,8 @@ footer a:hover {
   margin-top: 30px;
   background-color: #262834;
   font-size: 1.75rem;
+  color: white;
+  text-decoration: none;
 }
 
 .soc-con-1:hover {
@@ -1190,6 +1246,47 @@ footer a:hover {
   display: inline-block;
 }
 
+@media (min-width: 768px) {
+  .header-wrapper {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .phone-box,
+.search-div {
+    display: none;
+  }
+
+  .search-2 {
+    display: inline-block;
+    align-items: center;
+    height: 60px;
+    margin: 0 30px;
+  }
+
+  .search-field {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 75%;
+    background: #f1f1f1;
+    height: inherit;
+  }
+
+  .search-btn {
+    background-color: #999aa2;
+    width: 25%;
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+    border-left: none;
+    border-style: none;
+    font-size: 1.8rem;
+    color: white;
+    float: left;
+  }
+}
 @media (min-width: 768px) {
   #tele-anchor,
 #web-anchor,
@@ -1361,9 +1458,37 @@ footer a:hover {
     width: 200px;
   }
 }
+@media (min-width: 992px) {
+  .support-btn {
+    height: 65px;
+  }
+
+  .contact-btn {
+    height: 65px;
+  }
+
+  .search-field {
+    display: none;
+  }
+
+  .search-btn {
+    width: 65px;
+    border-radius: 3px;
+  }
+}
 @media only screen and (max-width: 992px) {
   .nav-bar {
     display: none;
+  }
+}
+@media (min-width: 992px) {
+  .caro-title,
+.caro-p {
+    text-align: left;
+  }
+
+  .caro-link {
+    margin-left: 0;
   }
 }
 @media (min-width: 992px) {
@@ -1374,7 +1499,7 @@ footer a:hover {
   }
 
   .three-flex {
-    height: 400px;
+    height: 350px;
   }
 
   .info-boxes {
@@ -1386,6 +1511,7 @@ footer a:hover {
     background-image: url(../img/about.png);
     background-repeat: no-repeat;
     background-position: 100%;
+    background-size: cover;
   }
 
   .about-flex {
@@ -1503,6 +1629,20 @@ footer a:hover {
   }
 }
 @media (min-width: 1260px) {
+  .bar-child {
+    width: 192.67px;
+  }
+
+  .horizontal-list li {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1260px) {
+  .caro-box {
+    width: 1170px;
+  }
+}
+@media (min-width: 1260px) {
   .info-boxes {
     width: 1170px;
   }
@@ -1519,8 +1659,9 @@ footer a:hover {
     width: 25%;
   }
 
-  .four-flex {
-    height: 410px;
+  .three-flex,
+.four-flex {
+    height: 312px;
   }
 }
 @media (min-width: 1260px) {
@@ -1531,6 +1672,10 @@ footer a:hover {
 
   .about-child {
     width: 50%;
+  }
+
+  .ab-wrapper--mod {
+    background-size: contain;
   }
 }
 @media (min-width: 1260px) {

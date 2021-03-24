@@ -1,6 +1,25 @@
 @use '../abstracts' as *;
-
 // Large Screen Breakpoint: > 992px & < 1260px
+
+
+@media (min-width:992px) {
+  .support-btn {
+    height: 65px;
+  }
+
+  .contact-btn {
+    height: 65px;
+  }
+
+  .search-field {
+    display: none;
+  }
+  .search-btn {
+    width: 65px;
+    border-radius: 3px;
+  }
+
+}
 
 @media only screen and (max-width: 992px) {
   .nav-bar {
@@ -9,13 +28,27 @@
 }
 
 @media (min-width: 992px) {
+  .caro-title,
+  .caro-p {
+    text-align: left;
+  }
+  .caro-link {
+    margin-left: 0;
+  }
+}
+
+// Align the first three info boxes in a row, size them so there is no content
+// overflow
+
+@media (min-width: 992px) {
   #bespoke-anchor,
   #it-anchor,
   #marketing-anchor {
     flex: 1;
   }
+
   .three-flex {
-    height: 400px;
+    height: 350px;
   }
 
   .info-boxes {
@@ -23,11 +56,14 @@
   }
 }
 
+// Make the netmatters logo appaer size the container
+
 @media (min-width: 992px) {
     .ab-wrapper--mod {
        background-image: url(../img/about.png);
        background-repeat: no-repeat;
        background-position: 100%;
+       background-size: cover;
     }
 
     .about-flex {
@@ -53,8 +89,6 @@
 @media (min-width: 992px) {
   .client-parent-wrapper {
     width: 970px;
-    // display: flex;
-    // justify-content: space-between;
   }
 
   .client-parent {
