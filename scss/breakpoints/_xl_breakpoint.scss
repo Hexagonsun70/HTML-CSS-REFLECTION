@@ -1,6 +1,20 @@
 // XL Screen size: > 1260px
 // width of elements should be 1170 to 1200 to centrally align
 
+@media (min-width:1260px) {
+  .header-wrapper {
+    width: 1170px;
+  }
+
+  .search-field {
+    display: inline-block;
+    width: 77%
+  }
+  .search-btn {
+    border-radius: 0 3px 3px 0;
+    width: 23%
+  }
+}
 
 
 @media (min-width:1260px) {
@@ -83,7 +97,7 @@
 
 @media (min-width: 1260px) {
   .client-parent-wrapper {
-    width: 1200px;
+    width: 1170px;
   }
   .busseys,
   .crane,

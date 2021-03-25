@@ -115,8 +115,15 @@
 	margin-bottom: 20px;
 }
 
-.read-more:hover {
-	filter: brightness(85%);
+.read1:hover {
+	background-color: $web-col-drk;
+}
+
+.read2:hover {
+	background-color: $marketing-col-drk;
+}
+.read3:hover {
+	background-color: $it-col-drk;
 }
 
 .news-footer {

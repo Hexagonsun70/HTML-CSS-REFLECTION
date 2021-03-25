@@ -52,8 +52,8 @@
   background-color: #333645;
   border-radius:    3px;
   color:            white;
-  width:            65px;
-	height:           60px;
+  width:            60px;
+	height:           56px;
 	padding:          5px 15px;
   // margin-top: 19px;
 }
@@ -93,5 +93,9 @@
 }
 
 .search-2 {
+	display: none;
+}
+
+.hdr-btn-div {
 	display: none;
 }
