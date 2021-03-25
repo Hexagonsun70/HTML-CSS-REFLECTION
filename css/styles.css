@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -127,6 +128,10 @@ hr {
   padding: 5px 15px;
 }
 
+.burger-box:hover {
+  background-color: #22242E;
+}
+
 .burger-div,
 .burger-flex-break,
 .burger-text,
@@ -167,6 +172,16 @@ hr {
 
 .hdr-btn-div {
   display: none;
+}
+
+.search-field[type=text] {
+  outline: none;
+  border: 1px solid #DDDDDD;
+}
+
+.search-field[type=text]:focus {
+  box-shadow: 0 0 5px #51cbee;
+  border: 1px solid #51cbee;
 }
 
 .nav-bar {
@@ -439,8 +454,29 @@ hr {
   background-color: #F62459;
 }
 
-.caro-link:hover {
-  filter: brightness(85%);
+#caro-link1:hover {
+  background-color: #79539a;
+}
+
+#caro-link2:hover {
+  background-color: #286abd;
+}
+
+#caro-link3:hover {
+  background-color: #bc2c28;
+}
+
+#caro-link4:hover {
+  background-color: #526781;
+}
+
+#caro-link5:hover {
+  background-color: #25a25a;
+  width: 350px;
+}
+
+#caro-link6:hover {
+  background-color: #de093f;
 }
 
 #caro1 {
@@ -485,11 +521,6 @@ hr {
   width: 100%;
 }
 
-.anchor-wrapper {
-  margin: 30px 0 0;
-  display: flex;
-}
-
 .info-boxes {
   position: relative;
   display: flex;
@@ -499,7 +530,17 @@ hr {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  width: auto;
+  width: 100%;
+}
+
+.anchor-wrapper {
+  margin: 30px 0 0;
+  display: flex;
+  width: 100%;
+}
+
+.anchor-wrapper .read-more:hover {
+  filter: none;
 }
 
 .info-anchor {
@@ -523,8 +564,7 @@ hr {
   align-items: center;
   padding: 30px;
   border: 1px solid #DDD;
-  width: auto;
-  max-width: 720px;
+  width: 100%;
   border-radius: 3px;
   height: 330px;
 }
@@ -589,10 +629,6 @@ hr {
   letter-spacing: 0.4;
   text-transform: uppercase;
   color: white;
-}
-
-.anchor-wrapper .read-more:hover {
-  filter: none;
 }
 
 .read-text {
@@ -1086,8 +1122,44 @@ hr {
 .input-field {
   width: 100%;
   height: 45px;
-  border: #777;
   padding: 0 15px;
+  outline: none;
+  border: 1px solid #DDDDDD;
+}
+.input-field:focus {
+  box-shadow: 0 0 5px #51cbee;
+  border: 1px solid #51cbee;
+}
+
+input[type=checkbox] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  display: flex;
+  outline: none;
+  content: none;
+  text-align: center;
+  line-height: 30px;
+}
+
+input[type=checkbox]:before {
+  font-family: "FontAwesome";
+  content: "";
+  font-size: 1.2rem;
+  border-radius: 4px;
+  color: transparent;
+  background: #DDD;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #333645;
+}
+
+input[type=checkbox]:checked:before {
+  background: #333645;
+  color: rgba(255, 255, 255, 0.85);
+  border: 3px solid #333645;
+  border-radius: 4px;
 }
 
 .form-elements {
@@ -1566,11 +1638,7 @@ hr {
   #bespoke-anchor,
 #it-anchor,
 #marketing-anchor {
-    flex: 1;
-  }
-
-  .three-flex {
-    height: 350px;
+    width: 33.3%;
   }
 
   .info-boxes {
@@ -1639,6 +1707,10 @@ hr {
   .input-name,
 .input-email {
     width: 100%;
+  }
+
+  .your-email {
+    margin-left: 15px;
   }
 
   .input-field {

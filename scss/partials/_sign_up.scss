@@ -46,11 +46,46 @@
 .input-field {
   width:  100%;
   height: 45px;
-  border: #777;
   padding: 0 15px;
+  outline: none;
+  border: 1px solid #DDDDDD;
+  &:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+  }
 }
 
+input[type=checkbox] {
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none;
+    display: flex;
+    outline: none;
+    content: none;
+    text-align: center;
+    line-height: 30px;
 
+}
+
+input[type=checkbox]:before {
+    font-family: "FontAwesome";
+    content: "\f00c";
+    font-size: 1.2rem;
+    border-radius:4px;
+    color: transparent;
+    background: $input-bg;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 3px solid $dark-bg;
+}
+
+input[type=checkbox]:checked:before {
+  background: $dark-bg;
+  color: rgba(255,255,255, 0.85);
+  border: 3px solid $dark-bg;
+  border-radius:4px;
+}
 
 .form-elements {
   display:         flex;

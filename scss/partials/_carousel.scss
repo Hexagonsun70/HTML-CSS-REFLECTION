@@ -60,6 +60,7 @@ font-size: 1.2rem;
 #caro-link3{
   background-color: $tele-col;
 }
+
 #caro-link4 {
   background-color: $bespoke-col;
 }
@@ -73,8 +74,29 @@ font-size: 1.2rem;
   background-color: $cyber-col;
 }
 
-.caro-link:hover {
-  filter: brightness(85%);
+#caro-link1:hover {
+  background-color: $web-col-drk;
+}
+
+#caro-link2:hover {
+  background-color: $it-col-drk;
+}
+
+#caro-link3:hover {
+  background-color: $tele-col-drk;
+}
+
+#caro-link4:hover {
+  background-color: $bespoke-col-drk;
+}
+
+#caro-link5:hover {
+  background-color: $marketing-col-drk;
+  width: 350px;
+}
+
+#caro-link6:hover {
+  background-color: $cyber-col-drk;
 }
 
 #caro1 {

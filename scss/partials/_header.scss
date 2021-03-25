@@ -38,7 +38,7 @@
   /* makes the image wrap to the box size set in .phone box */
   width:  100%;
   height: auto;
-	color:  #333645;
+	color:  $dark-bg;
 }
 
 .fa-phone-alt:hover {
@@ -49,13 +49,17 @@
 	display:          flex;
 	flex-wrap:        wrap;
 	justify-content:  center;
-  background-color: #333645;
+  background-color: $dark-bg;
   border-radius:    3px;
   color:            white;
   width:            60px;
 	height:           56px;
 	padding:          5px 15px;
   // margin-top: 19px;
+}
+
+.burger-box:hover {
+	background-color: #22242E;
 }
 
 .burger-div,
@@ -98,4 +102,14 @@
 
 .hdr-btn-div {
 	display: none;
+}
+
+.search-field[type=text]  {
+  outline: none;
+  border: 1px solid #DDDDDD;
+}
+
+.search-field[type=text]:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
 }
