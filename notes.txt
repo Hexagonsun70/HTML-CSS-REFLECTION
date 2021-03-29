@@ -1,0 +1,40 @@
+------------------------------------------------------------------------------
+
+IE PROBLEMS:
+
+--Border shading in header navbar not working for some reason.
+
+--Tickbox not styled.
+
+--Microsoft badge flush with partner badge rather than spaced.
+
+------------------------------------------------------------------------------
+
+COMPLETED:
+
+-- Change the Social Media icons so they dont underline on hover.
+
+-- Need to make netmatters logo stretch over the about section
+
+-- Input fields need blue styling when active
+
+-- Make search field borders style blue when active
+
+-- Subscribe button of sign-up section needs proper hover colour and not filter
+
+-- Button in about section needs hover state
+
+-- Need to change the Read More buttons to not use filter and use the dark
+   colours instead
+
+-- Need to add checkbox to input.
+
+-- Need to add shading to the client bar background top.
+
+-- Need to add grow effect to the news card images.
+
+-- Tool-tip arrows different distances from images
+   (may be able to be fixed by attaching them to same sized
+   divs rather than img)
+
+-- Info box lines need to turn completely white on hover

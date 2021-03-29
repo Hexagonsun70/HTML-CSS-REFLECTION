@@ -1,31 +1,45 @@
 @use '../abstracts' as *;
 
+.span-line-container {
+	transform: translateZ(10);
+}
+
 .span-con {
-	font-family: poppins-bold;
-	text-transform: uppercase;
+
 	font-size: 1.25rem;
 	letter-spacing: 0.4;
-	padding: 40px 15px;
+	padding-top: 40px;
 }
 
-.span {
-	margin-bottom: 1000px;
+.latest-block {
+	height: 105px;
+	display: flex;
+	align-items: flex-end;
 }
 
-.line {
-	border: solid 2px;
-	background-color: black;
-	width: 65px;
-	margin-left: 15px;
-	margin-bottom: 0px;
-	padding: 0;
+.latest {
+	width: 70px;
+	height: 65px;
+	margin-left: 14px;
+	border-bottom: 5px solid $dark-bg;
+	font-size: 20px;
+	text-align: center;
+	font-family: poppins-bold;
+	text-transform: uppercase;
+	color: $dark-bg;
+}
+
+.box--shadow-news {
+	width: 100%;
+	height: auto;
+  box-shadow: inset 0 10px 20px $news-bg;
 }
 
 /* News blocks */
 
 .news {
 	padding-top:      50px;
-	background-color: $news-bg;
+	background-color: white;
 
 }
 
@@ -44,8 +58,11 @@
 	width: 100%;
 }
 
+.background1 {
+	overflow: hidden;
+}
+
 .news-image {
-	height: auto;
 	max-width: 100%;
 	display: block;
 }
@@ -53,6 +70,16 @@
 .background1 {
 	position: relative;
 }
+
+.grow {
+	transition: all .25s ease-in-out;
+}
+
+.grow:hover {
+	transform: scale(1.1);
+	opacity: 85%;
+ }
+
 
 .news-tag {
  	width: auto;

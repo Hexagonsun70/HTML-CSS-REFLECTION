@@ -104,6 +104,7 @@
 	width: 28px;
 	height: 3px;
 	margin-bottom: 10px;
+	border-color: 1px solid black;
 }
 
 .read-more {
@@ -185,7 +186,10 @@
 		background-color: $bespoke-col;
 		color: white;
 	}
-	.rule {background-color: white;}
+	.rule {
+		background-color: white;
+		border: solid 1px white;
+	}
 	#info-icon1, #read-more1 {
 		background-color: white;
 		color: $bespoke-col;
@@ -200,7 +204,10 @@
 		background-color: $it-col;
 		color: white;
 	}
-	.rule {background-color: white;}
+	.rule {
+		background-color: white;
+		border: solid 1px white;
+	}
 	#info-icon2, #read-more2 {
 		background-color: white;
 		color: $it-col;
@@ -215,7 +222,10 @@
 		background-color: $marketing-col;
 		color: white;
 	}
-	.rule {background-color: white;}
+	.rule {
+		background-color: white;
+		border: solid 1px white;
+	}
 	#info-icon3, #read-more3 {
 		background-color: white;
 		color: $marketing-col;
@@ -230,7 +240,10 @@
 		background-color: $tele-col;
 		color: white;
 	}
-	.rule {background-color: white;}
+	.rule {
+		background-color: white;
+		border: solid 1px white;
+	}
 	#info-icon4, #read-more4 {
 		background-color: white;
 		color: $tele-col;
@@ -245,7 +258,10 @@
 		background-color: $cyber-col;
 		color: white;
 	}
-	.rule {background-color: white;}
+	.rule {
+		background-color: white;
+		border: solid 1px white;
+	}
 	#info-icon6, #read-more6 {
 		background-color: white;
 		color: $cyber-col;
@@ -260,7 +276,10 @@
 		background-color: $web-col;
 		color: white;
 	}
-	.rule {background-color: white;}
+	.rule {
+		background-color: white;
+		border: solid 1px white;
+	}
 	#info-icon5, #info-icon7,
 	#read-more5, #read-more7 {
 		background-color: white;

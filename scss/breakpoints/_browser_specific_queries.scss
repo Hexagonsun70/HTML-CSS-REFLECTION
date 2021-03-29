@@ -1,0 +1,42 @@
+// Makes the text fit in the burger-box menu button on mozilla
+
+@-moz-document url-prefix() {
+  .burger-img-div {
+    height: 20px;
+  }
+}
+
+// Couldn't figure out IE specific queries. Because this is the last partial
+// it overwrites due to the cascade but may be less efficient than IE specific
+// rules.
+
+// Font Styling for IE
+
+.about--strong,
+.latest,
+.news-tag,
+.posted,
+.news-title {
+  font-family: poppins;
+}
+
+.about--strong {
+  font-weight: bold;
+}
+
+.latest {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.news-tag {
+  font-size: 12px;
+}
+
+// Problems with IE:
+
+// Border shading in header navbar not working for some reason.
+
+// Tickbox not styled.
+
+// Microsoft badge flush with partner badge rather than spaced.
