@@ -1,3 +1,7 @@
+Unsolved Problems:
+
+-- Make the checkbox tick from clicking anywhere on the associated text 
+
 ------------------------------------------------------------------------------
 
 IE PROBLEMS:

@@ -1,6 +1,11 @@
 // XL Screen size: > 1260px
 // width of elements should be 1170 to 1200 to centrally align
 
+//----------------------------------------------------------------------------//
+
+// Increases the size of the header wrapper, makes the search-field visible,
+// makes the corners of the button uncurved and flush with the search-field.
+
 @media (min-width:1260px) {
   .header-wrapper {
     width: 1170px;
@@ -16,6 +21,8 @@
   }
 }
 
+// enlarges the width of the navbar elements and increases the font size of the
+// list items
 
 @media (min-width:1260px) {
   .bar-child {
@@ -27,13 +34,16 @@
 
 }
 
+// resizes the carousel text/button div
+
 @media (min-width:1260px) {
   .caro-box {
     width: 1170px;
   }
 }
 
-//
+// Expands the width of the containing div (.info-boxes). creates a break to
+// organise the flex items. re-sizes them all so they fit.
 
 @media (min-width:1260px) {
   .info-boxes {

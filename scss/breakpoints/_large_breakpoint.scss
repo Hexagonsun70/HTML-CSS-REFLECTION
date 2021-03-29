@@ -1,6 +1,11 @@
 @use '../abstracts' as *;
 // Large Screen Breakpoint: > 992px & < 1260px
 
+//----------------------------------------------------------------------------//
+
+// expands the wrapper for the whole header, hides the search field, curves off
+// the sharp edges of the search button and adds the support & contact button.
+// styles the buttons
 
 @media (min-width:992px) {
   .header-wrapper {
@@ -69,11 +74,15 @@
 
 }
 
-@media only screen and (max-width: 992px) {
+// Makes the nav-bar.
+
+@media (min-width: 992px) {
   .nav-bar {
-    display: none;
+    display: flex;
   }
 }
+
+// aligns the carousel text to the left of the div, rather than the centre
 
 @media (min-width: 992px) {
   .caro-title,
@@ -97,7 +106,7 @@
   }
 
   .four-flex {
-    height: 312px; 
+    height: 312px;
   }
 
   .info-boxes {
@@ -105,7 +114,7 @@
   }
 }
 
-// Make the netmatters logo appaer size the container
+// Make the netmatters logo appaer size the container.
 
 @media (min-width: 992px) {
     .ab-wrapper--mod {
@@ -165,7 +174,6 @@
 
 
 // Make the two input fields align one one line. makes a section container
-//
 
 @media (min-width:992px) {
   .sign-up-section {
