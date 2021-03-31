@@ -8,8 +8,6 @@
 // Anchor Wrapper determines that the flex elements may be laid out in.
 // Check Media queries for Changes in width.
 
-
-
 .info-boxes {
   position: relative;
   display: flex;
@@ -32,7 +30,6 @@
 	filter: none;
 }
 
-
 .info-anchor {
   flex: 1;
   flex-basis: 100%;
@@ -52,6 +49,7 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+	box-shadow: 5px 5px 30px $input-bg;
   padding: 30px;
   border: 1px solid $input-bg;
 	width: 100%;
@@ -111,6 +109,7 @@
   flex: 0.2;
   flex-basis: 10%;
   height: 45px;
+	width: 125px;
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -121,8 +120,6 @@
   text-transform: uppercase;
   color: white;
 }
-
-
 
 .read-text {
 	white-space: nowrap;
@@ -147,8 +144,6 @@
 	color: white;
 	font-size: 1.2rem;
 }
-
-
 
 #info-icon1, #read-more1 {
   background-color: $bespoke-col;

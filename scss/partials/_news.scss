@@ -37,6 +37,10 @@
 
 /* News blocks */
 
+.news-blocks {
+	box-shadow: 5px 5px 30px $input-bg;
+}
+
 .news {
 	padding-top:      50px;
 	background-color: white;
@@ -109,8 +113,9 @@
 .news-title {
 	font-family: poppins-bold;
 	font-size: 16px;
-	margin-bottom: 10px;
+	font-weight: 600;
 	text-transform: capitalize;
+	margin-bottom: 10px;
 	display: flex;
 	align-items: baseline;
 	&:hover {
@@ -132,6 +137,7 @@
 .news-p {
 	font-size: 13px;
 	margin-bottom: 20px;
+	color: #777;
 }
 
 .read1,

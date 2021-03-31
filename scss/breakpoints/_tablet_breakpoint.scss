@@ -1,3 +1,9 @@
 // Tablet Breakpoint > 425px & < 768px
 
 // Left in a size reference, even though its not used.
+
+@media (max-width:600px) {
+ .img-shrink {
+   height: auto;
+ }
+}

@@ -22,7 +22,7 @@
 
 .img-shrink {
 	width:  100%;
-	height: auto;
+	height: 65px;
 }
 
 .phone-box {
@@ -96,8 +96,13 @@
 	background-position: right;
 }
 
+.search-fa {
+ font-size: 1.2rem;
+}
+
 .search-2 {
 	display: none;
+	background-color: white;
 }
 
 .hdr-btn-div {
@@ -107,6 +112,7 @@
 .search-field[type=text]  {
   outline: none;
   border: 1px solid #DDDDDD;
+	background-color: white;
 }
 
 .search-field[type=text]:focus {

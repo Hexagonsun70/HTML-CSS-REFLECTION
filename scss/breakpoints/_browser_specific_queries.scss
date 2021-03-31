@@ -10,7 +10,7 @@
 // it overwrites due to the cascade but may be less efficient than IE specific
 // rules.
 
-// Font Styling for IE
+// Font Styling for IE:
 
 .about--strong,
 .latest,
@@ -33,10 +33,15 @@
   font-size: 12px;
 }
 
-// Problems with IE:
+// Setting the width of info-boxes buttons for IE:
 
-// Border shading in header navbar not working for some reason.
-
-// Tickbox not styled.
-
-// Microsoft badge flush with partner badge rather than spaced.
+#read-more1,
+#read-more2,
+#read-more3,
+#read-more4,
+#read-more5,
+#read-more6,
+#read-more7 {
+  width: 125px !important;
+  flex-basis: 20%; 
+}

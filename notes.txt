@@ -1,6 +1,6 @@
 Unsolved Problems:
 
--- Make the checkbox tick from clicking anywhere on the associated text 
+-- Make the checkbox tick from clicking anywhere on the associated text
 
 ------------------------------------------------------------------------------
 
@@ -8,7 +8,7 @@ IE PROBLEMS:
 
 --Border shading in header navbar not working for some reason.
 
---Tickbox not styled.
+--checkbox not styled.
 
 --Microsoft badge flush with partner badge rather than spaced.
 

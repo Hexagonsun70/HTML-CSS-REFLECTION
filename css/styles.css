@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -95,7 +95,7 @@ hr {
 
 .img-shrink {
   width: 100%;
-  height: auto;
+  height: 65px;
 }
 
 .phone-box {
@@ -166,8 +166,13 @@ hr {
   background-position: right;
 }
 
+.search-fa {
+  font-size: 1.2rem;
+}
+
 .search-2 {
   display: none;
+  background-color: white;
 }
 
 .hdr-btn-div {
@@ -177,6 +182,7 @@ hr {
 .search-field[type=text] {
   outline: none;
   border: 1px solid #DDDDDD;
+  background-color: white;
 }
 
 .search-field[type=text]:focus {
@@ -562,6 +568,7 @@ hr {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  box-shadow: 5px 5px 30px #DDD;
   padding: 30px;
   border: 1px solid #DDD;
   width: 100%;
@@ -621,6 +628,7 @@ hr {
   flex: 0.2;
   flex-basis: 10%;
   height: 45px;
+  width: 125px;
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -867,6 +875,10 @@ hr {
 }
 
 /* News blocks */
+.news-blocks {
+  box-shadow: 5px 5px 30px #DDD;
+}
+
 .news {
   padding-top: 50px;
   background-color: white;
@@ -936,8 +948,9 @@ hr {
 .news-title {
   font-family: poppins-bold;
   font-size: 16px;
-  margin-bottom: 10px;
+  font-weight: 600;
   text-transform: capitalize;
+  margin-bottom: 10px;
   display: flex;
   align-items: baseline;
 }
@@ -960,6 +973,7 @@ hr {
 .news-p {
   font-size: 13px;
   margin-bottom: 20px;
+  color: #777;
 }
 
 .read1,
@@ -1370,6 +1384,11 @@ input[type=checkbox]:checked:before {
   display: inline-block;
 }
 
+@media (max-width: 600px) {
+  .img-shrink {
+    height: auto;
+  }
+}
 @media (min-width: 768px) {
   .header-wrapper {
     width: 750px;
@@ -1980,4 +1999,15 @@ input[type=checkbox]:checked:before {
 
 .news-tag {
   font-size: 12px;
+}
+
+#read-more1,
+#read-more2,
+#read-more3,
+#read-more4,
+#read-more5,
+#read-more6,
+#read-more7 {
+  width: 125px !important;
+  flex-basis: 20%;
 }
