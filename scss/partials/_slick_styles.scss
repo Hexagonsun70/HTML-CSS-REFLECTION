@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+
+.slick-dots {
+  transform: translateY(-70px);
+}
+
+.slick-dots li button::before {
+    color: white !important;
+    font-size: .7rem !important;
+    transform: translateX(-2.5px)
+               translateY(-.53px);
+
+}
+
+.slick-dots .slick-active {
+  border: 2.5px solid white;
+  border-radius: 50%;
+  &.slick-dots li button::before {
+    color: white;
+    opacity: 100;
+  }
+}
+
+// #slick-slide-control00::before,
+// #slick-slide-control01::before,
+// #slick-slide-control02::before,
+// #slick-slide-control03::before,
+// #slick-slide-control04::before,
+// #slick-slide-control05::before {
+//   position: absolute;
+//   transform: translateY(-2px);
+//   display: flex;
+//   justify-content: center;
+//   align-content: center;
+//   border: 1px solid white;
+// }

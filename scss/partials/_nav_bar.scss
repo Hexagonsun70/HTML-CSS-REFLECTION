@@ -17,7 +17,7 @@
 
 .child-wrapper {
   display:         flex;
-  justify-content: center;
+  // justify-content: center;
   align-items:     center;
   width:           100%;
 }
@@ -31,7 +31,7 @@
   border-left:    0.5px solid  black;
   color:          white;
   padding:        19px 0;
-  width:          154.33px;
+  width:          158.33px;
 }
 
 .bar-icon {
@@ -48,22 +48,28 @@
   border-right: 0.5px solid black;
 }
 
-.table {
-  display: table;
-  margin:  0 auto;
-  width:   100vw;
+.bar-tt {
+  position:        absolute;
+  display:         flex;
+  justify-content: center;
+  top:             84%;
+  left:            0%;
+  z-index:         10;
 }
 
-.bar-tt {
-  position: absolute;
-  top:      100%;
-  left:     0%;
-  z-index:  10;
+.table {
+  display: flex;
+  justify-content: center;
+  margin:  0 auto;
+  width:   100vw;
 }
 
 .horizontal-list{
   display:        none;
   list-style:     none;
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
   text-transform: uppercase;
   & li {
     display:        inline;
@@ -73,6 +79,28 @@
 
   }
 }
+
+// Failed attempt at lining up the text in the drop down bar with the first
+// button.
+
+// .horizontal-list::before,
+// .horizontal-list::after {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+// }
+//
+// .horizontal-list::before {
+//   right: 100%;
+//   width: 2000px;
+// }
+//
+// .horizontal-list::after {
+//   left: 100%;
+//   width: 2000px;
+// }
 
 .sml-txt, .lrg-txt {
   text-transform: uppercase;
@@ -102,7 +130,7 @@
   #web-list {
     display: block;
     align-items: center;
-    width: 100%;
+    width: inherit;
     background-color: $web-col-drk;
     text-align: center;
   }
@@ -118,7 +146,7 @@
   #it-list {
     display: block;
     align-items: center;
-    width: 100%;
+    width: inherit;
     background-color: $it-col-drk;
     text-align: center;
   }

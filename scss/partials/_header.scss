@@ -1,20 +1,20 @@
 @use '../abstracts' as *;
 
 .header-wrapper {
-	padding: 20px 15px;
+	padding: 20px 0px;
 	width:   100%;
 	height:  auto;
 }
 
 .header-flex {
   display:         flex;
-  justify-content: space-around;
+  justify-content: space-between;
 	align-items:     center;
 	height:          93px;
 }
 
 .logo-box {
-	margin:    10px auto 10px 10px;
+	// margin:    10px auto 10px 10px;
 	width:     100%;
 	height:    auto;
 	max-width: 402px;
@@ -58,6 +58,18 @@
   // margin-top: 19px;
 }
 
+.burger-bar {
+	background-color: white;
+	height: 4px;
+	width: 30px;
+	border-radius: 2px;
+	margin-bottom: 1px;
+}
+
+.bb-top {
+	margin-top: 4px;
+}
+
 .burger-box:hover {
 	background-color: #22242E;
 }
@@ -73,10 +85,6 @@
 	height: 35px;
 }
 
-.fa-bars {
-	font-size: 2rem;
-}
-
 .burger-text {
 	align-self:     baseline;
 	text-align:     center;
@@ -88,12 +96,19 @@
 .search {
   width:               100%;
   height:              47px;
-  background-color:    lightgrey;
-  border:              solid 2px darkgrey;
+	border:              solid 2px #ccc;
 	background-image:    url(../img/search-icon.png);
-	background-size:     contain;
+	box-shadow: inset    0px 1px 1px #ccc;
+	background-size:     25px;
 	background-repeat:   no-repeat;
-	background-position: right;
+	background-position: 99% 50%;
+  background-color:    rgba(0,0,0,.1);
+	color:               #555;
+	font-family:         poppins-bold !important;
+
+
+
+
 }
 
 .search-fa {

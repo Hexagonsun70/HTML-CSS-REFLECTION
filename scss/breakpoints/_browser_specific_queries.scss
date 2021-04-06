@@ -35,13 +35,13 @@
 
 // Setting the width of info-boxes buttons for IE:
 
-#read-more1,
-#read-more2,
-#read-more3,
-#read-more4,
-#read-more5,
-#read-more6,
-#read-more7 {
-  width: 125px !important;
-  flex-basis: 20%; 
+// Setting the News box element spacing in IE11
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+  .news-info .read-more {
+    transform: translateY(15px);
+  }
+  .read-more {
+    width: 125px;
+  }
 }

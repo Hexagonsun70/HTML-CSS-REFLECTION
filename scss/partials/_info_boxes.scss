@@ -1,8 +1,19 @@
 @use '../abstracts' as *;
 
+.carousel {
+	position: relative;
+	display: block;
+}
+
 // Info wrapper serves as a container to align the flex parent
 .info-wrapper {
 	width: 100%;
+	height: auto;
+	position: relative;
+	display: block;
+	// position: absolute;
+	// display: inline-block;
+	// transform: translateY(-30px);
 }
 
 // Anchor Wrapper determines that the flex elements may be laid out in.
@@ -16,8 +27,9 @@
   align-items: center;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 50px;
+	padding-bottom: 60px;
 	width: 100%;
+	height: auto !important;
 }
 
 .anchor-wrapper {
@@ -106,14 +118,12 @@
 }
 
 .read-more {
-  flex: 0.2;
-  flex-basis: 10%;
-  height: 45px;
-	width: 125px;
-  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+	height: 45px;
+	width: 125px;
+	border-radius: 4px;
   font-size: 17px;
   line-height: 35px;
   letter-spacing: 0.4;

@@ -81,7 +81,8 @@
 
 .grow:hover {
 	transform: scale(1.1);
-	opacity: 85%;
+	opacity: 0.7;
+	position: relative;
  }
 
 
@@ -102,11 +103,16 @@
 	}
 }
 
+.news-info {
+	display: flex;
+	flex-direction: column;
+}
 
 .info-date {
 	border-left: solid 1px $input-bg;
 	border-bottom: solid 1px $input-bg;
 	border-right: solid 1px $input-bg;
+	height: 325px;
 	padding: 30px;
 }
 
@@ -136,16 +142,22 @@
 
 .news-p {
 	font-size: 13px;
-	margin-bottom: 20px;
 	color: #777;
+	height: 50px;
+	line-height: 22px;
+	letter-spacing: 0.4px;
+	margin-bottom: 20px;
+
 }
 
 .read1,
 .read2,
 .read3 {
 	width: 150px;
+	display: flex;
 	align-self: border-left;
-	margin-bottom: 20px;
+	margin-top: 0px;
+	margin-bottom: 40px;
 }
 
 .read1:hover {
@@ -180,6 +192,7 @@
 .posted {
 	flex-grow: 1;
 	font-family: poppins-bold;
+	font-weight: 600;
 
 }
 

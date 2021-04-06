@@ -12,19 +12,11 @@
     width: 950px;
   }
 
-  .support-btn {
-    height: 56px;
-  }
-
-  .contact-btn {
-    height: 56px;
-  }
-
   .search-field {
     display: none;
   }
   .search-btn {
-    width: 65px;
+    width: 56px;
     border-radius: 3px;
   }
 
@@ -43,7 +35,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 56px;
     border-radius: 3px;
     padding: 5px 15px;
     width: 145px;
@@ -138,6 +130,10 @@
   .card-container {
     width: 970px;
     padding: 0;
+  }
+
+  .news-info .read-more {
+    margin-top: 8px
   }
 
 }

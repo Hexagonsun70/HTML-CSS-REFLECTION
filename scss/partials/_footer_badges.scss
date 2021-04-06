@@ -18,6 +18,10 @@
   flex-wrap:       nowrap;
 }
 
+.badge-child {
+  justify-content: center;
+}
+
 .badge-img {
   height:  auto;
   width: 100%;
@@ -30,6 +34,10 @@
   .colour-img {
     display: none;
   }
+}
+
+.google {
+  width: 100%;
 }
 
 // This hover rule switches out the b&w imgs for coloured
