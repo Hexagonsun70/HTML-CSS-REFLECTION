@@ -97,6 +97,7 @@
 	padding: 5px;
 	color: white;
 	font-family: poppins-bold;
+	font-weight: 600;
 	text-transform: uppercase;
 	&:hover {
 		text-decoration: underline;
@@ -178,7 +179,7 @@
 }
 
 .mini-logo {
-	object-fit: contain;
+	border-radius: 100%;
 }
 
 .news-foot-txt {

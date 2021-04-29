@@ -74,7 +74,7 @@ hr {
 }
 
 .header-wrapper {
-  padding: 20px 0px;
+  padding: 20px 15px;
   width: 100%;
   height: auto;
 }
@@ -90,6 +90,7 @@ hr {
   width: 100%;
   height: auto;
   max-width: 402px;
+  margin-right: 15px;
 }
 
 .img-shrink {
@@ -99,7 +100,6 @@ hr {
 
 .phone-box {
   font-size: 2rem;
-  margin: 0 20px;
   padding: 5px;
   text-decoration: none;
 }
@@ -125,13 +125,14 @@ hr {
   width: 60px;
   height: 56px;
   padding: 5px 15px;
+  cursor: pointer;
+  margin-left: 15px;
 }
 
 .burger-bar {
   background-color: white;
-  height: 4px;
+  height: 3px;
   width: 30px;
-  border-radius: 2px;
   margin-bottom: 1px;
 }
 
@@ -173,7 +174,7 @@ hr {
   background-position: 99% 50%;
   background-color: rgba(0, 0, 0, 0.1);
   color: #555;
-  font-family: poppins-bold !important;
+  font-family: poppins-bold;
 }
 
 .search-fa {
@@ -501,27 +502,27 @@ hr {
 }
 
 #caro1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel/web-design.jpg);
+  background: linear-gradient(270deg, transparent 25%, #000), url(../img/carousel/web-design.jpg);
 }
 
 #caro2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel/it-support.jpg);
+  background: linear-gradient(270deg, transparent 25%, #000), url(../img/carousel/it-support.jpg);
 }
 
 #caro3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel/telecoms-services.jpg);
+  background: linear-gradient(270deg, transparent 25%, #000), url(../img/carousel/telecoms-services.jpg);
 }
 
 #caro4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel/bespoke-software.jpg);
+  background: linear-gradient(270deg, transparent 25%, #000), url(../img/carousel/bespoke-software.jpg);
 }
 
 #caro5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel/digital-marketing.jpg);
+  background: linear-gradient(270deg, transparent 25%, #000), url(../img/carousel/digital-marketing.jpg);
 }
 
 #caro6 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel/cyber-security.jpg);
+  background: linear-gradient(270deg, transparent 25%, #000), url(../img/carousel/cyber-security.jpg);
 }
 
 /* Combinant Selectors */
@@ -955,6 +956,7 @@ hr {
   padding: 5px;
   color: white;
   font-family: poppins-bold;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .news-tag:hover {
@@ -1037,7 +1039,7 @@ hr {
 }
 
 .mini-logo {
-  object-fit: contain;
+  border-radius: 100%;
 }
 
 .news-foot-txt {
@@ -1466,13 +1468,11 @@ input[type=checkbox]:checked:before {
 
   .search-2 {
     display: inline-block;
-    align-items: center;
     height: 56px;
-    margin: 0 20px;
   }
 
   .search-field {
-    padding: 10px;
+    padding: 0 10px;
     font-size: 17px;
     border: 1px solid grey;
     float: left;
@@ -1490,7 +1490,7 @@ input[type=checkbox]:checked:before {
     border-style: none;
     font-size: 1.8rem;
     color: white;
-    float: left;
+    cursor: pointer;
   }
 
   .search-btn:hover {
@@ -1686,6 +1686,16 @@ input[type=checkbox]:checked:before {
 @media (min-width: 992px) {
   .header-wrapper {
     width: 950px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header-flex {
+    justify-content: flex-start;
+  }
+
+  .logo-box {
+    margin-right: auto;
   }
 
   .search-field {
@@ -1695,10 +1705,6 @@ input[type=checkbox]:checked:before {
   .search-btn {
     width: 56px;
     border-radius: 3px;
-  }
-
-  .search-2 {
-    margin: 0 20px 0 0;
   }
 
   .hdr-btn-div {
@@ -1723,13 +1729,13 @@ input[type=checkbox]:checked:before {
 
   .support-btn {
     background-color: #4183d7;
-    margin-right: 20px;
+    margin-right: 15px;
   }
 
   .contact-btn {
     background-color: #999aa2;
     width: 145px;
-    margin-right: 20px;
+    margin-right: 15px;
     color: white;
   }
 
