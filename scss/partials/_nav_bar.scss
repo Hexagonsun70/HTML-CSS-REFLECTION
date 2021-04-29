@@ -52,30 +52,48 @@
   position:        absolute;
   display:         flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
   top:             84%;
-  left:            0%;
+  left:            0;
+  right: 0;
   z-index:         10;
 }
 
+.spacer-left {
+  display: none;
+  width: 100%;
+  height: 45px;
+  margin: 16px 0;
+}
+
+.spacer-right {
+  display: none;
+   width: 100%;
+   height: 45px;
+   margin: 16px 0;
+}
+
 .table {
-  display: flex;
-  justify-content: center;
-  margin:  0 auto;
-  width:   100vw;
+  width:   949.98px;
 }
 
 .horizontal-list{
   display:        none;
-  list-style:     none;
   width: 950px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0;
+  // margin-left: auto;
+  // margin-right: auto;
   text-transform: uppercase;
+  text-align: left;
   & li {
     display:        inline;
     font-size:      13px;
     line-height:    45px;
     letter-spacing: 0.4;
+    padding: 0;
+    text-align: left;
+
 
   }
 }
@@ -124,15 +142,26 @@
 	.bar-child {
 		background-color: $web-col;
 	}
+  .spacer-left {
+    display: block;
+    background-color: $web-col-drk;
+  }
+  .spacer-right {
+    display: block;
+    background-color: $web-col-drk;
+  }
 	#web-icon {
 		color: white;
 	}
   #web-list {
     display: block;
-    align-items: center;
     width: inherit;
     background-color: $web-col-drk;
-    text-align: center;
+    text-align: left;
+    padding: 0;
+  }
+  #web-spacer {
+    background-color: $web-col-drk;
   }
 }
 
@@ -140,15 +169,23 @@
 	.bar-child {
 		background-color: $it-col;
 	}
+  .spacer-left {
+    display: block;
+    background-color: $it-col-drk;
+  }
+  .spacer-right {
+    display: block;
+    background-color: $it-col-drk;
+  }
 	#it-icon {
 		color: white;
 	}
   #it-list {
     display: block;
-    align-items: center;
     width: inherit;
     background-color: $it-col-drk;
-    text-align: center;
+    text-align: left;
+    padding: 0;
   }
 }
 
@@ -156,15 +193,22 @@
 	.bar-child {
 		background-color: $tele-col;
 	}
+  .spacer-left {
+    display: block;
+    background-color: $tele-col-drk;
+  }
+  .spacer-right {
+    display: block;
+    background-color: $tele-col-drk;
+  }
 	#tele-icon {
 		color: white;
 	}
   #tele-list {
     display: block;
-    align-items: center;
-    width: 100%;
+    width: inherit;
     background-color: $tele-col-drk;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -172,15 +216,22 @@
 	.bar-child {
 		background-color: $bespoke-col;
 	}
+  .spacer-left {
+    display: block;
+    background-color: $bespoke-col-drk;
+  }
+  .spacer-right {
+    display: block;
+    background-color: $bespoke-col-drk;
+  }
 	#bespoke-icon {
 		color: white;
 	}
   #bespoke-list {
     display: block;
-    align-items: center;
-    width: 100%;
+    width: inherit;
     background-color: $bespoke-col-drk;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -188,15 +239,22 @@
 	.bar-child {
 		background-color: $cyber-col;
 	}
+  .spacer-left {
+    display: block;
+    background-color: $cyber-col-drk;
+  }
+  .spacer-right {
+    display: block;
+    background-color: $cyber-col-drk;
+  }
 	#cyber-icon {
 		color: white;
 	}
   #cyber-list {
     display: block;
-    align-items: center;
-    width: 100%;
+    width: inherit;
     background-color: $cyber-col-drk;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -204,17 +262,26 @@
 	.bar-child {
 		background-color: $marketing-col;
 	}
+  .spacer-left {
+    display: block;
+    background-color: $marketing-col-drk;
+  }
+  .spacer-right {
+    display: block;
+    background-color: $marketing-col-drk;
+  }
 	#digi-icon {
 		color: white;
 	}
+
   #digi-list {
     display: block;
-    align-items: center;
-    width: 100%;
+    width: inherit;
     background-color: $marketing-col-drk;
-    text-align: center;
+    text-align: left;
   }
 }
+
 
 #web-icon {
   color: $web-col;
