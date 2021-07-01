@@ -1,0 +1,128 @@
+@use '../abstracts' as *;
+
+.cookie-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: auto;
+  background-color: rgba(0,0,0,.7);
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  padding: 30px;
+  @media (min-width: 580px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+
+.cookie {
+  &-banner {
+  position: block;
+  display: flex;
+  width: auto;
+  max-width: 595px;
+  flex-direction: column;
+  background-color: white;
+  height: auto;
+  width: 100%;
+  z-index: 3;
+  font-family: "poppins", sans-serif;
+  border-radius: 3px;
+  }
+
+  &-policy {
+    padding: 20px;
+    font-size: 23px;
+    color: #333645;
+  }
+
+  &-line {
+    height: auto;
+    width: 100%;
+    border-bottom: 0.5px solid #666;
+    opacity: 0.2;
+
+  }
+
+  &-p-wrapper {
+    padding: 20px;
+  }
+
+
+  &-p {
+
+    line-height: 30px;
+    letter-spacing: 0.4px;
+    font-size: 14px;
+    color: #666;
+    &-1 {
+      margin-bottom: 25px;
+    }
+
+  }
+
+  &-footer {
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+  &-btn {
+    font-weight: 500;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 35px;
+    letter-spacing: 0.3px;
+    border-radius: 3px;
+    border: 0px;
+    cursor: pointer;
+  }
+
+  &-btn-1 {
+    background-color: #999aa2;
+    &:hover {
+      background-color: #84858f;
+    }
+  }
+
+  &-btn-spacer {
+    height: 20px;
+    width: 100%;
+    display: block;
+  }
+
+
+  &-btn-2 {
+    background-color: $web-col;
+    &:hover {
+      background-color: $web-col-drk;
+    }
+  }
+
+}
+
+@media (min-width: 690px) {
+  .cookie {
+    &-footer {
+      flex-direction: row;
+    }
+
+    &-btn {
+      margin: 0px 15px;
+      width: 100%;
+    }
+
+    &-btn-spacer {
+      display: none;
+    }
+  }
+}
