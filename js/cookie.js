@@ -55,3 +55,12 @@ $(".pref__sect-3-btn-2").click(function () {
   console.log("button 1 pressed")
   };
 });
+
+// function setupEnableDisable(button, callback) {
+//   let enable = $(button).hasClass("pref--btn-white");
+//   $(button).click( => () {
+//     if (enable === true) {
+//       toggleButtonColor(button)
+//     }
+//   }
+// }

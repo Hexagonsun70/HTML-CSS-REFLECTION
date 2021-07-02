@@ -69,8 +69,14 @@ a {
   text-decoration: none;
 }
 
-hr {
-  margin: 0;
+.burger-shift-left {
+  transform: translateX(-257px);
+  transition: transform 0.8s;
+}
+
+.burger-shift-right {
+  transform: translateX(0);
+  transition: transform 0.8s;
 }
 
 .header-wrapper {
@@ -1772,6 +1778,143 @@ input[type=checkbox]:checked:before {
   letter-spacing: 0.4px;
   margin-bottom: 15px;
 }
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/poppins-v15-latin-regular.woff2);
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url(../fonts/poppins-v15-latin-600.woff2);
+}
+.hamburger-mask {
+  display: block;
+  position: fixed;
+  width: calc(100vw - (100vw - 100%));
+  height: 100vh;
+  background-color: rgba(51, 54, 69, 0.4);
+  z-index: 200;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.hamburger-text {
+  text-transform: uppercase;
+  font-family: "poppins", sans-serif;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.hamburger-spacer {
+  height: 7px;
+}
+
+.hamburger {
+  padding: 10.5px 11.87px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: #333645;
+  border-radius: 3px;
+  border: 0;
+  margin: 0 0 0 15px;
+  overflow: visible;
+}
+.hamburger:hover {
+  background: #262834;
+}
+.hamburger.is-active:hover {
+  background: #262834;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: white;
+}
+
+.hamburger-box {
+  width: 30px;
+  height: 17px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -1.5px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -7px;
+}
+.hamburger-inner::after {
+  bottom: -7px;
+}
+
+/*
+ * Vortex
+ */
+.hamburger--vortex .hamburger-inner {
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.hamburger--vortex .hamburger-inner::before, .hamburger--vortex .hamburger-inner::after {
+  transition-duration: 0s;
+  transition-delay: 0.1s;
+  transition-timing-function: linear;
+}
+.hamburger--vortex .hamburger-inner::before {
+  transition-property: top, opacity;
+}
+.hamburger--vortex .hamburger-inner::after {
+  transition-property: bottom, transform;
+}
+.hamburger--vortex.is-active .hamburger-inner {
+  transform: rotate(765deg);
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.hamburger--vortex.is-active .hamburger-inner::before, .hamburger--vortex.is-active .hamburger-inner::after {
+  transition-delay: 0s;
+}
+.hamburger--vortex.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+}
+.hamburger--vortex.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(90deg);
+}
+
 @media (max-width: 600px) {
   .img-shrink {
     height: auto;

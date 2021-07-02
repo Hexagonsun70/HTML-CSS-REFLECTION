@@ -8,6 +8,12 @@ a {
   text-decoration: none;
 }
 
-hr {
-  margin: 0;
+.burger-shift-left {
+  transform: translateX(-257px);
+  transition: transform 0.8s;
+}
+
+.burger-shift-right {
+  transform: translateX(0);
+  transition: transform 0.8s;
 }
