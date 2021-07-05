@@ -8,13 +8,25 @@
 
   display: block;
   position: fixed;
-  width: calc(100vw - (100vw - 100%));
+  width: calc(100vw - (100vw - 100%) - 257px);
   height: 100vh;
-  background-color: rgba(51, 54, 69, 0.4);
+  background-color: rgba(0,0,0,.7);
   z-index: 200;
   cursor: pointer;
   border: none;
   padding: 0;
+  // transition: background-color 0.8s;
+}
+
+.burger-shift-left {
+  transform: translateX(-257px);
+  transition: transform 0.8s;
+  overflow: hidden;
+}
+
+.burger-shift-right {
+  transform: translateX(0);
+  transition: transform 0.8s;
 }
 
 .hamburger-text {

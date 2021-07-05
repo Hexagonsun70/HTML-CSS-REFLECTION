@@ -7,13 +7,3 @@
 a {
   text-decoration: none;
 }
-
-.burger-shift-left {
-  transform: translateX(-257px);
-  transition: transform 0.8s;
-}
-
-.burger-shift-right {
-  transform: translateX(0);
-  transition: transform 0.8s;
-}
