@@ -138,6 +138,20 @@
 // These can probably be done with mixins, but couldn't figure out how to
 // implement one with so many differing variables.
 
+// $navs:(
+//     'web':'#334455',
+//     'it':'#445566',
+//     'telecoms':'#556677',
+//     'software':'#667788',
+//     'marketing':'#778899',
+// );
+//
+// @each $name $color in $navs {
+//   &--#{$name} {
+//     background-color: #{$color};
+//     }
+// }
+
 #web-bar-anchor:hover {
 	.bar-child {
 		background-color: $web-col;
@@ -150,7 +164,7 @@
     display: block;
     background-color: $web-col-drk;
   }
-	#web-icon {
+	.web-icon {
 		color: white;
 	}
   #web-list {
@@ -177,7 +191,7 @@
     display: block;
     background-color: $it-col-drk;
   }
-	#it-icon {
+	.it-icon {
 		color: white;
 	}
   #it-list {
@@ -201,7 +215,7 @@
     display: block;
     background-color: $tele-col-drk;
   }
-	#tele-icon {
+	.tele-icon {
 		color: white;
 	}
   #tele-list {
@@ -224,7 +238,7 @@
     display: block;
     background-color: $bespoke-col-drk;
   }
-	#bespoke-icon {
+	.bespoke-icon {
 		color: white;
 	}
   #bespoke-list {
@@ -247,7 +261,7 @@
     display: block;
     background-color: $cyber-col-drk;
   }
-	#cyber-icon {
+	.cyber-icon {
 		color: white;
 	}
   #cyber-list {
@@ -270,7 +284,7 @@
     display: block;
     background-color: $marketing-col-drk;
   }
-	#digi-icon {
+	.digi-icon {
 		color: white;
 	}
 
@@ -280,29 +294,4 @@
     background-color: $marketing-col-drk;
     text-align: left;
   }
-}
-
-
-#web-icon {
-  color: $web-col;
-}
-
-#it-icon {
-  color: $it-col;
-}
-
-#tele-icon {
-  color: $tele-col;
-}
-
-#bespoke-icon {
-  color:$bespoke-col;
-}
-
-#digi-icon {
-  color: $marketing-col;
-}
-
-#cyber-icon {
-  color: $cyber-col;
 }

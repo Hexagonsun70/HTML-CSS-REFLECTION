@@ -1,13 +1,146 @@
 @use '../abstracts' as *;
 
-.sidebar-wrapper {
-  position: absolute;
-  height: 100vh;
-  width: 257px;
+.sb {
   position: fixed;
-  z-index: -1;
+  height: 100%;
+  width: calc(275px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   top: 0;
   right: 0;
+  z-index: 1000;
   overflow-x: hidden;
-  background-color: red;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: $dark-bg;
+  transform: translateX(275px);
+  transition: transform 0.5s;
+  font-family: "poppins", sans-serif;
+
+  &__blocks {
+  width: 100%;
+  height: auto;
+  position: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: $dark-bg;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  }
+
+  &--contact,
+  &__icon-block {
+    margin: 0 20px;
+  }
+
+  &--contact,
+  &__icon {
+    border-radius: 3px;
+  }
+
+  &--li-first {
+    border-radius: 3px 3px 0 0;
+    border-bottom:    0.5px solid black;
+  }
+
+  &--li-middle {
+    border-bottom:    0.5px solid black;
+    border-top:    0.5px solid #666;
+  }
+
+  &--li-last {
+    border-radius: 0 0 3px 3px;
+    border-top:    0.5px solid #666;
+  }
+
+  &--contact {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    border: 1px solid #666;
+  }
+
+  &__icon-block {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 20px 0;
+    border: 1px solid #666;
+  }
+
+  &--icon-pad {
+    padding-bottom: 10px;
+  }
+
+  &--ul,
+  &--ul-2 {
+    margin: 0;
+  }
+
+  &--ul {
+    text-align: center;
+    padding: 20px 0 0 0;
+  }
+
+  &--ul-2 {
+    padding: 0 0 0 0;
+  }
+
+  &--li,
+  &--li-2 {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: $box-col;
+    font-size: 14px;
+  }
+
+  &__link-title {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+  }
+
+  &--li-2 {
+    padding: 15px 20px;
+  }
+
+
+}
+
+.sml-txt-sb,
+.lrg-txt-sb {
+  letter-spacing: 0.4px;
+  line-height:    18px;
+}
+
+.sml-txt-sb {
+  padding-bottom: 3px;
+  font-size: 10px;
+}
+
+.lrg-txt-sb {
+  font-size: 15px;
+}
+
+.fa-chevron-right {
+  color: white;
+  font-size:6px;
 }
