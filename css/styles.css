@@ -81,7 +81,53 @@ footer {
   background-color: white;
 }
 
+.header-carousel {
+  height: 100vh;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+#nav.hide {
+  top: -232px;
+}
+@media (min-width: 992) {
+  #nav.hide {
+    top: -232px;
+  }
+}
+
+#header-spacer {
+  width: 100vw;
+  height: 133px;
+}
+@media (min-width: 992px) {
+  #header-spacer {
+    height: 232px;
+  }
+}
+
+.header-wrapper::before {
+  content: "";
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.header-wrapper::after {
+  content: "";
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
 .header-wrapper {
+  display: flex;
   padding: 20px 15px;
   width: 100%;
   height: auto;
@@ -237,8 +283,8 @@ footer {
   align-items: center;
   flex-direction: column;
   height: 99px;
-  border-right: 0.5px solid #666;
-  border-left: 0.5px solid black;
+  border-right: 0.5px solid rgba(102, 102, 102, 0.4);
+  border-left: 0.5px solid rgba(0, 0, 0, 0.4);
   color: white;
   padding: 19px 0;
   width: 158.33px;
@@ -250,12 +296,12 @@ footer {
 
 .left-child {
   height: 99px;
-  border-right: 0.5px solid #666;
+  border-right: 0.5px solid rgba(102, 102, 102, 0.4);
 }
 
 .right-child {
   height: 99px;
-  border-right: 0.5px solid black;
+  border-right: 0.5px solid rgba(0, 0, 0, 0.4);
 }
 
 .bar-tt {
@@ -1543,7 +1589,7 @@ input[type=checkbox]:checked:before {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
   height: auto;
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-overflow-scrolling: touch;
@@ -1761,12 +1807,6 @@ input[type=checkbox]:checked:before {
   letter-spacing: 0.4px;
   margin-bottom: 15px;
 }
-.sb__link-title:hover,
-.sb__icon:hover,
-.sb--contact:hover {
-  background-color: rgba(102, 102, 102, 0.15);
-}
-
 .sb {
   position: fixed;
   height: 100%;
@@ -1782,7 +1822,8 @@ input[type=checkbox]:checked:before {
   -webkit-overflow-scrolling: touch;
   background-color: #333645;
   transform: translateX(275px);
-  transition: transform 0.5s;
+  transition: transform 0.4s;
+  transition-timing-function: ease-in;
   font-family: "poppins", sans-serif;
 }
 .sb__blocks {
@@ -1821,6 +1862,7 @@ input[type=checkbox]:checked:before {
   padding: 20px 0;
   border: 1px solid rgba(102, 102, 102, 0.4);
   box-shadow: 0px 0px 2px black;
+  cursor: pointer;
 }
 .sb__icon-block {
   display: block;
@@ -1864,7 +1906,6 @@ input[type=checkbox]:checked:before {
   color: white;
   padding: 10px;
   background-color: #262834;
-  font-size: 14px;
 }
 .sb__link-title {
   text-transform: uppercase;
@@ -1878,13 +1919,17 @@ input[type=checkbox]:checked:before {
   padding: 15px 20px;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
   border-top: 0.5px solid rgba(102, 102, 102, 0.4);
+  font-size: 13px;
 }
 .sb__icon-block:hover {
   background-color: rbga(20, 21, 27, 0.4);
 }
 
-.sb-hover:hover {
-  background-color: #666;
+.sb-hover:hover,
+.sb__link-title:hover,
+.sb__icon:hover,
+.sb--contact:hover {
+  background-color: rgba(102, 102, 102, 0.15);
 }
 
 .sml-txt-sb,
@@ -1906,6 +1951,10 @@ input[type=checkbox]:checked:before {
   color: white;
   font-size: 6px;
   transform: translateY(-2.5px);
+}
+
+.chevron-padding {
+  padding-right: 7px;
 }
 
 @media (min-width: 992px) {
@@ -2065,11 +2114,13 @@ input[type=checkbox]:checked:before {
   cursor: pointer;
   border: none;
   padding: 0;
-  transition: background-color 0.3s, transform 0.5s;
+  transition: background-color 0.3s, transform 0.4s;
+  transition-timing-function: ease-in;
 }
 
 .mask-click {
-  transition: background-color 0.3s, transform 0.5s;
+  transition: background-color 0.3s, transform 0.4s;
+  transition-timing-function: ease-in;
 }
 
 .no-scroll {
@@ -2078,13 +2129,15 @@ input[type=checkbox]:checked:before {
 
 .burger-shift-left {
   transform: translateX(-275px);
-  transition: transform 0.5s;
+  transition: transform 0.4s;
+  transition-timing-function: ease-in;
   overflow: hidden;
 }
 
 .burger-shift-right {
   transform: translateX(0);
-  transition: transform 0.5s;
+  transition: transform 0.4s;
+  transition-timing-function: ease-in;
 }
 
 .web-icon {

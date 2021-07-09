@@ -27,8 +27,8 @@
   align-items:    center;
   flex-direction: column;
   height:         99px;
-  border-right:   0.5px solid #666;
-  border-left:    0.5px solid  black;
+  border-right:   0.5px solid $border-gry;
+  border-left:    0.5px solid  $border-blk;
   color:          white;
   padding:        19px 0;
   width:          158.33px;
@@ -40,12 +40,12 @@
 
 .left-child {
   height:       99px;
-  border-right: 0.5px solid #666;
+  border-right: 0.5px solid $border-gry;
 }
 
 .right-child {
   height:       99px;
-  border-right: 0.5px solid black;
+  border-right: 0.5px solid $border-blk;
 }
 
 .bar-tt {
