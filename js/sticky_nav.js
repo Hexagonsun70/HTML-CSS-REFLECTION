@@ -43,10 +43,6 @@
             curDirection = 1;
         }
 
-        // if (currentDirection !== previousDirection) {
-        //     toggled = setTimeout(toggleHeader, 500);
-        // }
-
         if(curDirection !== prevDirection) {
             toggled = toggleHeader();
         }
