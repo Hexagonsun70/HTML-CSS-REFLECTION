@@ -1,9 +1,48 @@
 @use '../abstracts' as *;
 
+.header-carousel {
+	height: 100vh;
+}
+
+#nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	transition: all .4s ease-in;
+	z-index: 2;
+}
+
+#nav.hide {
+	top: -232px;
+	@media(min-width: 992){
+		top: -232px;
+	}
+}
+
+.h-space-wrapper {
+	display: flex;
+	background-color: white;
+}
+
+#header-spacer {
+	display: relative;
+	width: 100vw;
+	height: 180px;
+	@media(min-width: 768px){
+		height: 133px;
+	}
+	@media(min-width: 992px){
+		height: 232px;
+	}
+}
+
 .header-wrapper {
+	display: inline-block;
+	// display: flex;
 	padding: 20px 15px;
 	width:   100%;
 	height:  auto;
+	background-color: white;
 }
 
 .header-flex {
@@ -11,6 +50,7 @@
   justify-content: space-between;
 	align-items:     center;
 	height:          93px;
+	background-color: white;
 }
 
 .logo-box {
@@ -105,7 +145,7 @@
 	background-position: 99% 50%;
   background-color:    rgba(0,0,0,.1);
 	color:               #555;
-	font-family:         poppins-bold;
+	font-family:         "poppins", sans-serif;
 
 
 

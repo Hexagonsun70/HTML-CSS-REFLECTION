@@ -1,0 +1,2 @@
+$(document).ready((function(){$(".carousel").slick({slidesToShow:1,slidesToScroll:1,autoplay:!0,autoplaySpeed:3e3,fade:!1,dots:!0,arrows:!1,pauseOnFocus:!0})}));
+//# sourceMappingURL=myscript-dist.js.map

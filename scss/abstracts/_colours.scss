@@ -20,10 +20,15 @@ $dark-bg:  #333645;
 $news-bg:  #f3f3f3;
 $input-bg: #DDD;
 
+$dark-bg-hover: rbga(20, 21, 27, 0.4);
+
 
 // Shades of b&w:
 
 $box-col:  #262834;
+$grey-col: #666;
+$grey-col-btn: #999aa2;
+$grey-col-btn-drk: #84858f;
 
 //#22242E
 
@@ -37,3 +42,9 @@ $box-col:  #262834;
 $fb-blue:        #3b5988;
 $twitter-blue:   #00aced;
 $linked-in-blue: #0077b5;
+
+// border shading colours:
+
+$border-blk: rgba(0,0,0, 0.4);
+$border-gry: rgba(102,102,102, 0.4);
+$sb-hover: rgba(102,102,102, 0.15);

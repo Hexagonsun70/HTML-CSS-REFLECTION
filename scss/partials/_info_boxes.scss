@@ -3,6 +3,7 @@
 .carousel {
 	position: relative;
 	display: block;
+	background-color: white; 
 }
 
 // Info wrapper serves as a container to align the flex parent
@@ -11,6 +12,7 @@
 	height: auto;
 	position: relative;
 	display: block;
+	background-color: white;
 	// position: absolute;
 	// display: inline-block;
 	// transform: translateY(-30px);
@@ -30,6 +32,7 @@
 	padding-bottom: 60px;
 	width: 100%;
 	height: auto !important;
+	background-color: white;
 }
 
 .anchor-wrapper {
