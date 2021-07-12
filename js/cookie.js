@@ -1,6 +1,6 @@
 if(localStorage.getItem("cookieClicked") === "true") {
-  $(".pref__wrapper").delay(100).fadeOut();
-  $(".cookie").delay(100).fadeOut();
+  $(".pref__wrapper").css("display", "none");
+  $(".cookie").css("display", "none");
   $("body").removeClass("no-scroll");
   console.log("Cookie remembered");
 } else {
