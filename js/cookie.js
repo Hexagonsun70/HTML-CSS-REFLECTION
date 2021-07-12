@@ -1,7 +1,17 @@
+if(localStorage.getItem("cookieClicked") === "true") {
+  $(".pref__wrapper").delay(100).fadeOut();
+  $(".cookie").delay(100).fadeOut();
+  $("body").removeClass("no-scroll");
+  console.log("Cookie remembered");
+} else {
+  console.log("Cookie not accepted");
+};
+
 $(".close").click(function() {
   $(".pref__wrapper").delay(200).fadeOut();
   $(".cookie").fadeOut();
   $("body").removeClass("no-scroll");
+  localStorage.setItem("cookieClicked", "true")
 });
 
 $(".preferences").click(function() {
