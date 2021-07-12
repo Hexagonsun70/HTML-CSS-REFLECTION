@@ -43,7 +43,7 @@ let transformLeft = `translateX(0)`;
 console.log(scrollbox.width); //-> 17 (Windows, Chrome)
 console.log(transformStart); //-> translateX(17px + 257px) (Windows, Chrome)
 
-const shiftContent = $("header, main, footer");
+const shiftContent = $("#nav,main, footer");
 
 $(".hamburger").click(function () {
   $(".hamburger").addClass("is-active");
@@ -52,8 +52,6 @@ $(".hamburger").click(function () {
   $(".mask-click").addClass("hamburger-mask");
   $("body").addClass("no-scroll");
   $(".sb").css("transform", `${transformLeft}`);
-
-
 });
 
 $(".mask-click").click(function () {
@@ -63,5 +61,4 @@ $(".mask-click").click(function () {
   $(".mask-click").removeClass("hamburger-mask");
   $("body").removeClass("no-scroll");
   $(".sb").css("transform", `0`);
-
 });

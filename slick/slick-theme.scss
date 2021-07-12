@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import "_colors";
 
 // Default Variables
 
@@ -137,7 +136,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-dots {
     position: absolute;
-    bottom: 20px;
+    bottom: -25px;
     list-style: none;
     display: block;
     text-align: center;
@@ -154,20 +153,16 @@ $slick-opacity-not-active: 0.25 !default;
         cursor: pointer;
         button {
             border: 0;
-            background: $carouselUnfill;
+            background: transparent;
             display: block;
-            height: 11px;
-            width: 11px;
+            height: 20px;
+            width: 20px;
             outline: none;
             line-height: 0px;
             font-size: 0px;
             color: transparent;
             padding: 5px;
-            border-radius: 30px;
             cursor: pointer;
-            &:hover {
-                background-color: $CarouselHover;
-            }
             &:hover, &:focus {
                 outline: none;
                 &:before {
@@ -178,8 +173,7 @@ $slick-opacity-not-active: 0.25 !default;
                 position: absolute;
                 top: 0;
                 left: 0;
-                // content: $slick-dot-character;
-                content: "";
+                content: $slick-dot-character;
                 width: 20px;
                 height: 20px;
                 font-family: $slick-font-family;
@@ -187,26 +181,14 @@ $slick-opacity-not-active: 0.25 !default;
                 line-height: 20px;
                 text-align: center;
                 color: $slick-dot-color;
-                // opacity: $slick-opacity-not-active;
+                opacity: $slick-opacity-not-active;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
             }
         }
         &.slick-active button:before {
             color: $slick-dot-color-active;
-            display: block;
-            position: absolute;
-            width: 21px;
-            height: 21px;
-            border-radius: 22px;
-            border: 2px solid $White;
-            top: calc(50% - (30px / 2));
-            left: calc(50% - (30px / 2));
-            // opacity: $slick-opacity-default;
-        }
-
-        &.slick-active button {
-            background-color: $White;
+            opacity: $slick-opacity-default;
         }
     }
 }

@@ -93,7 +93,7 @@ footer {
   position: fixed;
   top: 0;
   width: 100%;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease-in;
   z-index: 2;
 }
 
@@ -114,7 +114,12 @@ footer {
 #header-spacer {
   display: relative;
   width: 100vw;
-  height: 133px;
+  height: 180px;
+}
+@media (min-width: 768px) {
+  #header-spacer {
+    height: 133px;
+  }
 }
 @media (min-width: 992px) {
   #header-spacer {
@@ -331,6 +336,7 @@ footer {
 }
 
 .horizontal-list {
+  left: 0;
   display: none;
   width: 950px;
   padding: 0;
