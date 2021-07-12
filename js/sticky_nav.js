@@ -30,7 +30,7 @@
 
     var header = document.getElementById('nav');
     var toggled;
-    var threshold = 170;
+    var threshold = 300;
 
     var checkScroll = function() {
         curScroll = w.scrollY || doc.scrollTop;
@@ -42,6 +42,10 @@
             //scrolled up
             curDirection = 1;
         }
+
+        // if (currentDirection !== previousDirection) {
+        //     toggled = setTimeout(toggleHeader, 500);
+        // }
 
         if(curDirection !== prevDirection) {
             toggled = toggleHeader();
