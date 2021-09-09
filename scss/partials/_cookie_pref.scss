@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 .pref__wrapper {
+  overflow-x: hidden;
   &-2{
     position: block;
     top: 0;
