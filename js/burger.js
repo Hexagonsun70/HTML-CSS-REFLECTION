@@ -49,6 +49,7 @@ $(".hamburger").click(function () {
   $(".hamburger").addClass("is-active");
   shiftContent.removeClass("burger-shift-right");
   shiftContent.addClass("burger-shift-left");
+  $('.carousel').slick('slickNext');
   $(".mask-click").addClass("hamburger-mask");
   $("body").addClass("no-scroll");
   $(".sb").css("transform", `${transformLeft}`);

@@ -1847,6 +1847,10 @@ input[type=checkbox]:checked:before {
 .sb--contact, .sb__icon {
   border-radius: 3px;
 }
+.sb a {
+  text-decoration: none;
+  color: white;
+}
 .sb--li-first {
   border-radius: 3px 3px 0 0;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
