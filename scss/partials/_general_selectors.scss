@@ -18,9 +18,13 @@ header {
 
 main {
   background-color: white;
+  transition: transform 0.4s;
+  transition-timing-function: ease-in;
 
 }
 
 footer {
   background-color: white;
+  transition: transform 0.4s;
+  transition-timing-function: ease-in;
 }

@@ -1,9 +1,6 @@
 .hamburger-mask {
   display: block;
   right: 0;
-  // transform the width of the sb -17 as the scroll bar is taken away
-  // on body
-  transform: translateX(-223px);
   position: fixed;
   width: calc(100vw - (100vw - 100%));
   height: 100vh;

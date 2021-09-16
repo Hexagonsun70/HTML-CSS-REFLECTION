@@ -544,7 +544,7 @@
   <!--
   mask for burger menu on click
   -->
-  <div class="mask-click" style="outline: 0;"></div>
+  <div class="mask-click" id="mask" style="outline: 0;"></div>
 
   <!--
     Cookie Pop-Up
@@ -1863,12 +1863,22 @@
 
     <!-- <script src="slick/slick.min.js"></script> -->
     <!-- <script src="/js/myscript.js"></script> -->
-    <script src="/js/cookie.js"></script>
-    <script src="/js/burger.js"></script>
+    <!-- <script src="/js/cookie.js"></script> -->
+    <!-- <script src="/js/burger.js"></script> -->
     <!-- <script src="/js/sticky_polyfill.js"></script> -->
 
-    <!-- <script async src="/dist/cookie-dist.js"></script> -->
+    <script async src="/dist/cookie-dist.js"></script>
+
+
     <!-- <script src="/dist/burger-dist.js"></script> -->
+
+    <script type="text/javascript">
+    if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+        document.write('<script src="/dist/ie-burger-dist.js"><\/script>');
+      } else {
+        document.write('<script src="/dist/burger-dist.js"><\/script>');
+      }
+    </script>
 
 
   </body>

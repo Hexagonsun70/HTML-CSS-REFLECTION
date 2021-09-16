@@ -79,10 +79,14 @@ header {
 
 main {
   background-color: white;
+  transition: transform 0.4s;
+  transition-timing-function: ease-in;
 }
 
 footer {
   background-color: white;
+  transition: transform 0.4s;
+  transition-timing-function: ease-in;
 }
 
 .header-carousel {
@@ -1810,13 +1814,17 @@ input[type=checkbox]:checked:before {
   letter-spacing: 0.4px;
   margin-bottom: 15px;
 }
+.sb__list-wrapper:hover > a {
+  background-color: rgba(102, 102, 102, 0.15);
+}
+
 .sb {
   position: fixed;
   height: 100%;
-  width: calc(275px);
   display: flex;
   justify-content: center;
   flex-direction: column;
+  transform: translateX(350px);
   top: 0;
   right: 0;
   z-index: 1000;
@@ -1824,9 +1832,6 @@ input[type=checkbox]:checked:before {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   background-color: #333645;
-  transform: translateX(275px);
-  transition: transform 0.4s;
-  transition-timing-function: ease-in;
   font-family: "poppins", sans-serif;
 }
 .sb__blocks {
@@ -2112,7 +2117,6 @@ input[type=checkbox]:checked:before {
 .hamburger-mask {
   display: block;
   right: 0;
-  transform: translateX(-223px);
   position: fixed;
   width: calc(100vw - (100vw - 100%));
   height: 100vh;
