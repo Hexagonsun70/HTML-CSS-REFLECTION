@@ -1,10 +1,12 @@
+if(localStorage.getItem("cookieClicked") === null) {
+  $(".cookie-wrapper").css("display", "flex");
+  $(".cookie").css("display", "flex");
+}
+
 if(localStorage.getItem("cookieClicked") === "true") {
   $(".pref__wrapper").css("display", "none");
   $(".cookie").css("display", "none");
   $("body").removeClass("no-scroll");
-  console.log("Cookie remembered");
-} else {
-  console.log("Cookie not accepted");
 };
 
 $(".close").click(function() {
