@@ -1,3 +1,4 @@
+@use "partials/_contact_page.scss";
 @use "partials/_reset.scss";
 @use "partials/general_selectors.scss";
 @use "partials/_header.scss";
@@ -14,9 +15,12 @@
 @use "partials/_cookie.scss";
 @use "partials/_cookie_pref.scss";
 @use "partials/_sidebar.scss";
+
 @use "hamburgers/_hamburgers.scss";
 @use "hamburgers/_burger_animation_styles.scss";
+
 @use "modules/_icon_styling.scss";
+
 @use "breakpoints/_mobile_breakpoint.scss";
 @use "breakpoints/_tablet_breakpoint.scss";
 @use "breakpoints/_medium_breakpoint.scss";

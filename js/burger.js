@@ -117,14 +117,14 @@ $(".hamburger").click(function () {
   $(".sb").css("transition-timing-function", "ease-in");
   //this class is from the hamburger animation script to trigger the animation.
   $(".hamburger").addClass("is-active");
-  // the 'body' is shifted left.
+  // the 'nav' main and footer is shifted left.
   shiftBody.css("transform", `${transformStart}`);
-  // the carousel fires the next slide so a visual glitch doesn't occur on it.
-  $('.carousel').slick('slickNext');
   // the class that darkens the 'body' is added.
   $(".mask-click").addClass("hamburger-mask");
-  // and finally the sidebar is transformed Into view
+  // the sidebar is transformed Into view
   $(".sb").css("transform", `${transformIn}`);
+  // Fires carousel the next slide so a visual glitch doesn't occur on it.
+  $('.carousel').slick('slickNext');
 });
 
 $(".mask-click").click(function () {

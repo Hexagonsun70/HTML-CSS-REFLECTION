@@ -1,0 +1,2 @@
+// posts the file name of the current page.
+var_dump(basename($_SERVER['SCRIPT_NAME']));

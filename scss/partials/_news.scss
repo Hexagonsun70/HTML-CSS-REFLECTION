@@ -62,10 +62,6 @@
 	width: 100%;
 }
 
-.background1 {
-	overflow: hidden;
-}
-
 .news-image {
 	max-width: 100%;
 	display: block;
@@ -73,6 +69,7 @@
 
 .background1 {
 	position: relative;
+	overflow: hidden;
 }
 
 .grow {
@@ -159,6 +156,10 @@
 	align-self: border-left;
 	margin-top: 0px;
 	margin-bottom: 40px;
+}
+
+.btn-drkn:hover {
+	filter: brightness(90%);
 }
 
 .read1:hover {

@@ -1,4 +1,320 @@
 @charset "UTF-8";
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/poppins-v15-latin-regular.woff2);
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url(../fonts/poppins-v15-latin-600.woff2);
+}
+.contact-wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .contact-wrapper {
+    width: 750px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact-wrapper {
+    width: 950px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .contact-wrapper {
+    width: 1200px;
+  }
+}
+
+.contact-page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("/img/carousel/telecoms-services.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 2rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: poppins;
+}
+@media screen and (min-width: 992px) {
+  .contact-page-header {
+    min-height: 200px;
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .contact-page-header {
+    min-height: 300px;
+  }
+}
+
+.contact-pg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: poppins, sans-serif;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .contact-pg-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.map-title {
+  margin: 15px 10px 10px 10px;
+  width: fit-content;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+.map-wrapper {
+  width: 100%;
+  color: #333645;
+  background-color: #DDD;
+  margin-top: 15px;
+  border-radius: 5px;
+  height: 600px;
+}
+@media screen and (min-width: 768px) {
+  .map-wrapper {
+    margin: 15px 15px 79px 0;
+  }
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  max-height: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  border: 10px #DDD solid;
+}
+
+b {
+  font-weight: 600;
+  text-align: center;
+}
+
+.map-info {
+  margin: 10px 10px 25px 10px;
+}
+
+.map-p {
+  line-height: 20px;
+}
+
+.map-p > a {
+  text-decoration: none;
+  color: #333645;
+}
+
+.form-wrapper {
+  width: 100%;
+  background-color: #DDD;
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 5px;
+  font-family: poppins, sans-serif;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .form-wrapper {
+    width: 600px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form-wrapper {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-h1 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .txt-box {
+    margin-bottom: 20px;
+  }
+}
+
+.txt-box {
+  flex-basis: 100%;
+  color: #333645;
+  padding: 10px;
+}
+
+.contact-h1 {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.contact-p {
+  font-size: 17px;
+  max-width: 75ch;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 360px;
+}
+
+.flex-form {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  height: 45px;
+  flex-wrap: nowrap;
+}
+
+.input::placeholder {
+  color: #23284B;
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.input {
+  font-family: poppins, sans-serif;
+  box-sizing: border-box;
+  flex-basis: 100%;
+  outline: none;
+  border-style: none;
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px #414143;
+  padding: 10px;
+  width: 100%;
+  height: 35px;
+  background-color: #FFFFFF;
+  color: #23284B;
+}
+
+.first-name,
+.last-name {
+  flex-basis: 50%;
+  width: 50%;
+}
+
+.first-name {
+  margin-right: 5px;
+}
+
+.last-name {
+  margin-left: 5px;
+}
+
+.form-top,
+.form-bottom {
+  height: 50px;
+}
+
+.form-top {
+  padding: 10px 5px 5px 5px;
+  height: 50px;
+}
+
+.form-bottom {
+  padding: 5px 5px 10px 5px;
+}
+
+.form-bottom textarea {
+  height: 80px;
+  resize: none;
+  font-family: poppins, sans-serif;
+}
+
+.form-button {
+  align-items: center;
+  background-color: #333645;
+  border-radius: 5px;
+  color: #DDD;
+  padding: 5px 20px;
+  margin-left: 10px;
+  height: 50px;
+}
+@media screen and (min-width: 600px) {
+  .form-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+  }
+}
+
+.btn-tickbox-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0px;
+}
+@media screen and (min-width: 768px) {
+  .btn-tickbox-wrapper {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn-tickbox-wrapper {
+    margin-top: 50px;
+  }
+}
+
+.tickbox-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.tb-txt-wrapper {
+  padding-left: 5px;
+}
+
+.tb-label {
+  font-size: 15px;
+  color: #333645;
+}
+
+.tb-label br {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .tb-label br {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .tb-label br {
+    display: none;
+  }
+}
+
+.form-button:hover {
+  cursor: pointer;
+  background-color: #282b36;
+  color: #FFFFFF;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-button {
+    min-width: 70px;
+    padding: 0;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -53,14 +369,6 @@ table {
 }
 
 /* /CSS reset */
-@font-face {
-  font-family: poppins;
-  src: url(../fonts/poppins-v15-latin-regular.woff2);
-}
-@font-face {
-  font-family: poppins-bold;
-  src: url(../fonts/poppins-v15-latin-600.woff2);
-}
 * {
   box-sizing: border-box;
 }
@@ -98,7 +406,7 @@ footer {
   top: 0;
   width: 100%;
   transition: all 0.4s ease-in;
-  z-index: 2;
+  z-index: 80000;
 }
 
 #nav.hide {
@@ -228,7 +536,7 @@ footer {
   width: 100%;
   height: 47px;
   border: solid 2px #ccc;
-  background-image: url(../img/search-icon.png);
+  background-image: url(/img/search-icon.png);
   box-shadow: inset 0px 1px 1px #ccc;
   background-size: 25px;
   background-repeat: no-repeat;
@@ -1063,10 +1371,6 @@ footer {
   width: 100%;
 }
 
-.background1 {
-  overflow: hidden;
-}
-
 .news-image {
   max-width: 100%;
   display: block;
@@ -1074,6 +1378,7 @@ footer {
 
 .background1 {
   position: relative;
+  overflow: hidden;
 }
 
 .grow {
@@ -1159,6 +1464,10 @@ footer {
   align-self: border-left;
   margin-top: 0px;
   margin-bottom: 40px;
+}
+
+.btn-drkn:hover {
+  filter: brightness(90%);
 }
 
 .read1:hover {
@@ -1827,7 +2136,7 @@ input[type=checkbox]:checked:before {
   transform: translateX(350px);
   top: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 99999;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -2121,7 +2430,7 @@ input[type=checkbox]:checked:before {
   width: calc(100vw - (100vw - 100%));
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 4;
+  z-index: 90002;
   cursor: pointer;
   border: none;
   padding: 0;

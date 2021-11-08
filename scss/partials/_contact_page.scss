@@ -1,0 +1,313 @@
+@use '../abstracts' as *;
+
+.contact-wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq(sm) {
+  width: 750px;
+  }
+  @include mq(md) {
+  width: 950px;
+  }
+  @include mq(lg) {
+  width: 1200px;
+  }
+}
+
+.contact-page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("/img/carousel/telecoms-services.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 2rem;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: poppins;
+
+  @include mq(md){
+    min-height:  200px;
+    margin-bottom: 4rem;
+  }
+  @include mq(lg){
+    min-height: 300px;
+  }
+
+}
+
+.contact-pg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: poppins, sans-serif;
+  flex-direction: column;
+  // align-items: center;
+  // height: auto;
+  @include mq(sm) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+// Leaflet.js map
+
+.map-title {
+  margin: 15px 10px 10px 10px;
+  width: fit-content;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+.map-wrapper {
+  width: 100%;
+  color: $dark-bg;
+  background-color: $input-bg;
+  margin-top: 15px;
+  border-radius: 5px;
+  height: 600px;
+  // z-index: -3;
+  @include mq(sm) {
+    margin: 15px 15px 79px 0;
+  }
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  max-height: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  border: 10px $input-bg solid;
+  // z-index: -2;
+}
+
+b {
+  font-weight: 600;
+  text-align: center;
+}
+
+.map-info {
+  margin: 10px 10px 25px 10px;
+}
+
+.map-p {
+  line-height: 20px;
+}
+
+.map-p > a {
+  text-decoration: none;
+  color: $dark-bg;
+}
+
+// Form Styles Start:
+
+.form-wrapper {
+  width: 100%;
+  background-color: $input-bg;
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 5px;
+  font-family: poppins, sans-serif;
+  margin-bottom: 2rem;
+  @include mq(sm) {
+    width: 600px;
+    margin-bottom: 0;
+  }
+  @include mq(sm) {
+    height: 600px;
+  }
+}
+
+.contact-h1 {
+  @include mq(sm) {
+    // margin-top: ;
+    margin-bottom: 20px;
+  }
+}
+
+.txt-box {
+  @include mq(sm) {
+    // margin-top: ;
+    margin-bottom: 20px;
+  }
+
+}
+
+.contact-form {
+  @include mq(sm) {
+    // margin-top: ;
+    // margin-bottom: ;
+  }
+}
+
+.contact-p {
+  @include mq(sm) {
+    // margin-top: ;
+    // margin-bottom: ;
+  }
+}
+
+/// Form Text
+
+.txt-box {
+  flex-basis: 100%;
+  color: $dark-bg;
+  padding: 10px;
+}
+
+.contact-h1 {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.contact-p {
+  font-size: 17px;
+  max-width: 75ch;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 360px;
+}
+
+.flex-form {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  height: 45px;
+  flex-wrap: nowrap;
+}
+
+.input::placeholder {
+  color: $blue;
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.input {
+  font-family: poppins, sans-serif;
+  box-sizing: border-box;
+  flex-basis: 100%;
+  outline: none;
+  border-style: none;
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px $grey;
+  padding: 10px;
+  width: 100%;
+  height: 35px;
+  background-color: $white;
+  color: $blue;
+}
+
+.first-name,
+.last-name {
+  flex-basis: 50%;
+  width: 50%;
+}
+.first-name {
+  margin-right: 5px;
+}
+.last-name {
+  margin-left: 5px;
+}
+
+.form-top,
+.form-bottom {
+  height: 50px;
+}
+
+.form-top {
+  padding: 10px 5px 5px 5px;
+  height: 50px;
+}
+
+.form-bottom {
+  padding: 5px 5px 10px 5px;
+}
+
+.form-bottom textarea {
+  height: 80px;
+  resize: none;
+  font-family: poppins, sans-serif;
+}
+
+.form-button {
+  align-items: center;
+  background-color: $dark-bg;
+  border-radius: 5px;
+  color: $input-bg;
+  padding: 5px 20px;
+  margin-left: 10px;
+  height: 50px;
+  @include mq(xs) {
+    padding: 10px 20px;
+    font-size: 1.20em;
+  }
+}
+
+.btn-tickbox-wrapper {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+margin: 20px 0px;
+@include mq(sm) {
+  margin-top: 30px;
+  // margin-bottom: ;
+}
+@include mq(md) {
+  margin-top: 50px;
+  // margin-bottom: ;
+}
+}
+
+.tickbox-wrapper {
+display: flex;
+align-items: center;
+padding-left: 15px;
+}
+
+.tb-txt-wrapper {
+  padding-left: 5px;
+}
+
+.tb-label {
+  font-size: 15px;
+  color: $dark-bg;
+}
+
+.tb-label br {
+  display: none;
+  @include mq(md) {
+    display: inline-block;
+  }
+
+  @include mq(lg) {
+    display: none;
+  }
+
+}
+
+.form-button:hover {
+  cursor: pointer;
+  background-color: darken($dark-bg, 5%);
+  color: $white;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-button{
+    min-width: 70px;
+    padding: 0;
+  }
+}
